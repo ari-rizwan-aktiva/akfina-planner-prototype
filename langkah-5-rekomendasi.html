@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Langkah 5 · Rekomendasi (F-05) — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="5">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="klien.html" aria-label="Kembali ke daftar klien"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-05 · Lembar Rekomendasi &amp; Rencana Aksi · Tahap 5</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Disusun dari F-04 · surplus Rp 3.283.000 / bulan · menunggu persetujuan klien</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill">Langkah 5 · Rekomendasi</span>
+        <button class="btn btn--secondary" type="button" data-todo="Simpan draf belum disambungkan di prototipe.">Simpan draf</button>
+        <a class="btn btn--primary" href="serah-terima.html">Lanjut ke Serah Terima</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+      <div class="notice notice--warn">
+        <div class="notice__body">
+          <p class="notice__title st-perbaikan">Dua asumsi belum disetujui klien</p>
+          <p class="notice__text">
+            Kenaikan penghasilan tahunan dan harapan hidup. Angka pensiun di bawah masih bisa berubah.
+            Ini mekanisme usulan, belum ada di formulir resmi.
+          </p>
+        </div>
+        <a class="btn btn--warn" href="kertas-kerja.html">Buka F-04 Analisa</a>
+      </div>
+
+      <!-- F-04 A -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <p class="eyebrow">Bagian A</p>
+          <h2 class="card__title" style="margin-top:.25rem">Rekomendasi per aspek</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Aspek</th>
+                <th scope="col">Rekomendasi perencanaan keuangan</th>
+                <th scope="col">Dampak yang diharapkan</th>
+                <th scope="col" class="num">Prioritas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__name">Investasi</td>
+                <td>Alihkan deposito jatuh tempo Nov 2026 ke RD pasar uang untuk dana darurat, bukan diperpanjang</td>
+                <td>Likuiditas naik dari 2,4 ke 3,1 bulan tanpa tambahan setoran</td>
+                <td class="num"><b class="st-kritis">1</b></td>
+              </tr>
+              <tr>
+                <td class="table__name">Bisnis / utang</td>
+                <td>Lunasi kartu kredit Rp 18,5 juta lebih dulu sebelum menambah investasi apa pun</td>
+                <td>Menghentikan bunga 26%/tahun — imbal hasil pasti yang tak tertandingi produk mana pun</td>
+                <td class="num"><b class="st-kritis">1</b></td>
+              </tr>
+              <tr>
+                <td class="table__name">Proteksi</td>
+                <td>Tambah term life Rp 2 miliar, 20 tahun. Jangan andalkan group life kantor</td>
+                <td>Menutup kesenjangan proteksi Rp 2,2 miliar dengan premi terjangkau</td>
+                <td class="num"><b>2</b></td>
+              </tr>
+              <tr>
+                <td class="table__name">Pensiun</td>
+                <td>Mulai setoran rutin sekarang meski kecil; naikkan otomatis 6% tiap tahun mengikuti kenaikan gaji</td>
+                <td>Memanfaatkan sisa 18 tahun; menunda 5 tahun menaikkan setoran hampir dua kali lipat</td>
+                <td class="num"><b>2</b></td>
+              </tr>
+              <tr>
+                <td class="table__name">Pajak</td>
+                <td>Laporkan penghasilan sewa ruko di SPT tahunan berikutnya</td>
+                <td>Menghindari sanksi dan memperjelas posisi pajak sebelum aset bertambah</td>
+                <td class="num"><b>3</b></td>
+              </tr>
+              <tr>
+                <td class="table__name">Waris</td>
+                <td>Susun wasiat sederhana dan tunjuk wali untuk kedua anak</td>
+                <td>Kepastian pembagian selama anak masih di bawah umur</td>
+                <td class="num"><b>3</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- F-04 B -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian B</p>
+            <h2 class="card__title" style="margin-top:.25rem">Alokasi dana bulanan yang direkomendasikan</h2>
+          </div>
+          <p class="card__note">Dibatasi surplus nyata Rp 3.283.000, bukan kebutuhan ideal Rp 25.871.000</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Pos</th>
+                <th scope="col">Instrumen / produk</th>
+                <th scope="col" class="num">Alokasi per bulan (Rp)</th>
+                <th scope="col" class="num">% dari penghasilan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Dana darurat</td><td>RD pasar uang</td><td class="num"><b>1.200.000</b></td><td class="num">3,0%</td></tr>
+              <tr><td>Pendidikan anak</td><td>RD campuran</td><td class="num"><b>600.000</b></td><td class="num">1,5%</td></tr>
+              <tr><td>Dana pensiun</td><td>RD saham + DPLK kantor</td><td class="num"><b>800.000</b></td><td class="num">2,0%</td></tr>
+              <tr><td>Proteksi (premi)</td><td>Term life 20 tahun</td><td class="num"><b>350.000</b></td><td class="num">0,9%</td></tr>
+              <tr><td>Pelunasan utang</td><td>Percepatan kartu kredit</td><td class="num"><b>333.000</b></td><td class="num">0,8%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="panel__total">
+          <b>Total</b>
+          <span style="display:flex;gap:2.5rem"><b style="font-size:var(--text-base)">Rp 3.283.000</b><b style="font-size:var(--text-base)">8,3%</b></span>
+        </p>
+      </section>
+
+      <!-- F-04 C -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <p class="eyebrow">Bagian C</p>
+          <h2 class="card__title" style="margin-top:.25rem">Rencana aksi &amp; tenggat waktu</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Tindakan yang harus dilakukan klien</th>
+                <th scope="col">Penanggung jawab</th>
+                <th scope="col">Tenggat waktu</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Serahkan salinan polis asuransi jiwa untuk diverifikasi</td><td>Klien</td><td>31 Jul 2026</td><td class="st-perbaikan">Menunggu</td></tr>
+              <tr><td>2</td><td>Setujui dua asumsi yang tersisa di Daftar Asumsi</td><td>Klien</td><td>31 Jul 2026</td><td class="st-perbaikan">Menunggu</td></tr>
+              <tr><td>3</td><td>Hentikan pemakaian kartu kredit, alihkan ke debit</td><td>Klien</td><td>1 Agu 2026</td><td class="st-perbaikan">Menunggu</td></tr>
+              <tr><td>4</td><td>Buka rekening RD pasar uang untuk dana darurat</td><td>Klien + Perencana</td><td>15 Agu 2026</td><td class="st-perbaikan">Menunggu</td></tr>
+              <tr><td>5</td><td>Jangan perpanjang deposito Nov 2026, alihkan ke dana darurat</td><td>Klien</td><td>10 Nov 2026</td><td class="t-subtle">Belum jatuh tempo</td></tr>
+              <tr><td>6</td><td>Ajukan term life Rp 2 miliar, bandingkan tiga penerbit</td><td>Perencana</td><td>30 Sep 2026</td><td class="st-perbaikan">Menunggu</td></tr>
+              <tr><td>7</td><td>Konsultasi notaris untuk wasiat dan penunjukan wali</td><td>Klien</td><td>31 Des 2026</td><td class="t-subtle">Belum mulai</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- F-04 D -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <p class="eyebrow">Bagian D</p>
+          <h2 class="card__title" style="margin-top:.25rem">Konsekuensi pilihan yang perlu dipahami klien</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Pilihan</th><th scope="col">Manfaat</th><th scope="col">Konsekuensi</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="table__name">Dahulukan dana darurat &amp; kartu kredit</td>
+                <td>Pondasi aman, bunga 26% berhenti</td>
+                <td class="st-perbaikan">Dana pensiun dan pendidikan tertunda 12–18 bulan</td>
+              </tr>
+              <tr>
+                <td class="table__name">Turunkan target dana pensiun</td>
+                <td>Setoran bulanan jadi terjangkau</td>
+                <td class="st-perbaikan">Gaya hidup saat pensiun harus disesuaikan, atau pensiun mundur dari usia 56</td>
+              </tr>
+              <tr>
+                <td class="table__name">Pilih S1 dalam negeri untuk kedua anak</td>
+                <td>Kebutuhan turun signifikan dari asumsi awal</td>
+                <td class="st-perbaikan">Pilihan kampus jadi terbatas; perlu disepakati bersama anak nantinya</td>
+              </tr>
+              <tr>
+                <td class="table__name">Jual ruko Cimahi</td>
+                <td>Menutup dana darurat dan sebagian pendidikan sekaligus</td>
+                <td class="st-kritis">Kehilangan penghasilan sewa Rp 1,8 juta/bulan dan satu-satunya aset produktif besar</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="panel__foot">
+          Rekomendasi produk keuangan bersifat <b>opsional dan tidak mengikat</b>.
+          Keputusan akhir sepenuhnya berada pada klien.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="grid grid--2">
+          <div>
+            <p class="eyebrow">Klien (menyetujui rekomendasi)</p>
+            <p class="strong">John Doe</p>
+            <p class="st-perbaikan" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem">Menunggu tanda tangan</p>
+          </div>
+          <div>
+            <p class="eyebrow">Perencana keuangan</p>
+            <p class="strong">Ari Rizwan, CFP</p>
+            <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem;display:flex;align-items:center;gap:.35rem">
+              <i data-icon="check" data-size="13"></i> Ditandatangani 22 Jul 2026
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

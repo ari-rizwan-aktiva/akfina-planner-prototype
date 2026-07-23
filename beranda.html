@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beranda · AkFina Financial Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="beranda">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar__titles">
+        <h1 class="topbar__title">Beranda</h1>
+        <p class="topbar__sub">Rabu, 22 Juli 2026 · ringkasan pekerjaan Anda hari ini</p>
+      </div>
+      <div class="topbar__tools">
+        <label class="visually-hidden" for="periode">Periode</label>
+        <span class="control control--sm" style="width:11rem">
+          <select id="periode">
+            <option>30 hari terakhir</option>
+            <option>7 hari terakhir</option>
+            <option>Tahun berjalan</option>
+          </select>
+          <i data-icon="chevron-down" data-size="14"></i>
+        </span>
+        <a class="btn btn--primary" href="klien-baru.html"><i data-icon="plus" data-size="15"></i> Klien Baru</a>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <!-- Tiga dari empat angka ini adalah hambatan, bukan prestasi. Disengaja.
+           Satu panel gelap, bukan empat kotak putih identik — itu pola dashboard
+           paling generik yang ada, dan bikin seluruh halaman jadi satu bidang putih. -->
+      <section class="statband" aria-label="Ringkasan hari ini">
+        <div>
+          <p class="eyebrow">Klien aktif</p>
+          <b class="statband__value">12</b>
+          <p class="statband__delta st-sehat">+2 klien bulan ini</p>
+        </div>
+        <div>
+          <p class="eyebrow">Perlu tindakan</p>
+          <b class="statband__value">3</b>
+          <p class="statband__delta st-kritis">2 menghambat langkah</p>
+        </div>
+        <div>
+          <p class="eyebrow">Asumsi menunggu klien</p>
+          <b class="statband__value">4</b>
+          <p class="statband__delta st-perbaikan">Rekomendasi tertahan</p>
+        </div>
+        <div>
+          <p class="eyebrow">Review 7 hari ke depan</p>
+          <b class="statband__value">2</b>
+          <p class="statband__delta">Terdekat 24 Jul</p>
+        </div>
+      </section>
+
+      <section class="grid grid--main-side">
+
+        <article class="card">
+          <div class="card__head">
+            <div>
+              <p class="eyebrow">Antrean kerja</p>
+              <h2 class="card__title">Perlu tindakan lebih dulu</h2>
+            </div>
+            <a class="link card__note" href="klien.html">Lihat semua klien</a>
+          </div>
+
+          <ul class="rows">
+            <li><a class="row" href="klien.html">
+              <span class="dot st-kritis"></span>
+              <span class="row__main"><span class="row__name">Budi Santoso</span><span class="row__sub">Langkah 3 · Arus kas</span></span>
+              <span class="row__mid st-kritis">Review bulan-6 telat 4 hari</span>
+              <span class="row__end st-sehat">Buka</span>
+            </a></li>
+            <li><a class="row" href="klien.html">
+              <span class="dot st-perbaikan"></span>
+              <span class="row__main"><span class="row__name">Rina Kusuma</span><span class="row__sub">Langkah 4 · Tujuan keuangan</span></span>
+              <span class="row__mid st-perbaikan">Asumsi belum disetujui klien</span>
+              <span class="row__end st-sehat">Buka</span>
+            </a></li>
+            <li><a class="row" href="langkah-1-profil.html">
+              <span class="dot st-perbaikan"></span>
+              <span class="row__main"><span class="row__name">John Doe</span><span class="row__sub">Langkah 5 · Rekomendasi</span></span>
+              <span class="row__mid st-perbaikan">Menunggu persetujuan klien</span>
+              <span class="row__end st-sehat">Buka</span>
+            </a></li>
+            <li><a class="row" href="scan-ocr.html">
+              <span class="dot st-perbaikan"></span>
+              <span class="row__main"><span class="row__name">Dewi Lestari</span><span class="row__sub">Langkah 2 · Neraca</span></span>
+              <span class="row__mid st-perbaikan">Form kertas siap di-scan (OCR)</span>
+              <span class="row__end st-sehat">Buka</span>
+            </a></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__head card__head--plain">
+            <div>
+              <p class="eyebrow">Sebaran</p>
+              <h2 class="card__title">Klien per langkah</h2>
+            </div>
+          </div>
+
+          <ul class="grid" style="gap:1rem">
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>1 · Profil</span><b>2</b></p>
+              <p class="bar" style="margin-top:.5rem"><i style="width:66%"></i></p>
+            </li>
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>2 · Neraca</span><b>3</b></p>
+              <p class="bar" style="margin-top:.5rem"><i style="width:100%"></i></p>
+            </li>
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>3 · Arus kas</span><b>2</b></p>
+              <p class="bar" style="margin-top:.5rem"><i style="width:66%"></i></p>
+            </li>
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>4 · Tujuan keuangan</span><b>2</b></p>
+              <p class="bar" style="margin-top:.5rem"><i style="width:66%"></i></p>
+            </li>
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>5 · Rekomendasi</span><b>3</b></p>
+              <p class="bar" style="margin-top:.5rem"><i style="width:100%"></i></p>
+            </li>
+          </ul>
+          <p style="margin-top:1.25rem;font-size:var(--text-xs);color:hsl(var(--fg-subtle))">
+            Rata-rata 4,2 minggu dari Profil ke Rekomendasi
+          </p>
+        </article>
+
+      </section>
+
+      <section class="grid grid--main-side">
+
+        <article class="card">
+          <div class="card__head">
+            <div>
+              <p class="eyebrow">Jadwal</p>
+              <h2 class="card__title">Agenda 7 hari ke depan</h2>
+            </div>
+            <a class="link card__note" href="#" data-todo="Halaman Jadwal belum digambar.">Buka Jadwal</a>
+          </div>
+
+          <ul class="rows">
+            <li><div class="row">
+              <span class="datechip">24 Jul</span>
+              <span class="row__main"><span class="row__name">Presentasi rencana · Sari Wijayanti</span><span class="row__sub">Langkah 5 · rekomendasi siap disajikan</span></span>
+              <span class="row__end t-muted">10.00</span>
+            </div></li>
+            <li><div class="row">
+              <span class="datechip">27 Jul</span>
+              <span class="row__main"><span class="row__name">Tanda tangan Daftar Asumsi · Rina Kusuma</span><span class="row__sub">Gerbang analisa masih tertahan</span></span>
+              <span class="row__end t-muted">13.30</span>
+            </div></li>
+            <li><div class="row">
+              <span class="datechip">28 Jul</span>
+              <span class="row__main"><span class="row__name">Review bulan-3 · Tono Prasetyo</span><span class="row__sub">Rencana berjalan sejak Sep 2025</span></span>
+              <span class="row__end t-muted">09.00</span>
+            </div></li>
+            <li><div class="row">
+              <span class="datechip">30 Jul</span>
+              <span class="row__main"><span class="row__name">Fact find lanjutan · Ahmad Fauzi</span><span class="row__sub">Menunggu form digital dari klien</span></span>
+              <span class="row__end t-muted">15.00</span>
+            </div></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__head card__head--plain">
+            <div>
+              <p class="eyebrow">Gerbang analisa</p>
+              <h2 class="card__title">Kesehatan kertas kerja</h2>
+            </div>
+          </div>
+
+          <ul class="grid" style="gap:1.25rem">
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>Asumsi terkunci</span><b class="st-sehat">5</b></p>
+              <p class="bar" style="margin-top:.5rem"><i style="width:42%"></i></p>
+            </li>
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>Menunggu persetujuan klien</span><b class="st-perbaikan">4</b></p>
+              <p class="bar bar--warn" style="margin-top:.5rem"><i style="width:33%"></i></p>
+            </li>
+            <li>
+              <p class="stack" style="grid-auto-flow:column;justify-content:space-between"><span>Dokumen belum lengkap</span><b class="st-kritis">3</b></p>
+              <p class="bar bar--krit" style="margin-top:.5rem"><i style="width:25%"></i></p>
+            </li>
+          </ul>
+          <p style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid hsl(var(--line));font-size:var(--text-xs);color:hsl(var(--fg-subtle))">
+            Asumsi wajib dikunci sebelum rekomendasi bisa disusun.
+          </p>
+        </article>
+
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Masuk · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body>
+
+<main class="auth">
+
+  <!-- Panel brand — rata tengah, ikon di atas, dua kartu kaca di bawah.
+       Anatomi dari referensi desain AkFina yang dikirim Ari. -->
+  <section class="auth__brand">
+    <span class="auth__mark"><i data-icon="wallet" data-size="30"></i></span>
+
+    <h1 class="auth__headline">Kelola Keuangan Anda dengan Lebih Cerdas</h1>
+    <p class="auth__sub">
+      Platform finansial modern untuk membantu Anda merencanakan masa depan
+      dengan analisis data yang akurat.
+    </p>
+
+    <div class="auth__cards">
+      <div class="auth__card">
+        <span class="auth__cardico"><i data-icon="bar-chart" data-size="17"></i></span>
+        <b>Analisis Cerdas</b>
+        <p>Pantau pertumbuhan aset dan pengeluaran secara real-time.</p>
+      </div>
+      <div class="auth__card">
+        <span class="auth__cardico"><i data-icon="shield" data-size="17"></i></span>
+        <b>Data Aman &amp; Terlindungi</b>
+        <p>Kami terus memperbarui sistem untuk memastikan datamu tersimpan dengan aman.</p>
+      </div>
+    </div>
+
+    <p class="auth__foot">AkFina · Aplikasi Perencanaan Finansial by Aktiva</p>
+  </section>
+
+  <!-- Satu pintu masuk untuk pengguna biasa DAN financial planner — sesuai
+       keputusan alur: satu akun AkFina, dua tampilan tergantung peran. -->
+  <section class="auth__panel">
+    <form class="auth__form" data-go="beranda.html">
+
+      <span class="auth__logo"><img src="assets/logo-akfina.png" width="709" height="176" alt="AkFina"></span>
+
+      <h2 class="auth__title">Masuk ke AkFina</h2>
+      <p class="auth__lead">
+        Silakan masukkan detail akun Anda untuk melanjutkan pengelolaan keuangan.
+      </p>
+
+      <div class="auth__fields">
+        <div class="field">
+          <label class="field__label" for="surel">Alamat Email</label>
+          <span class="control">
+            <i data-icon="mail" data-size="18"></i>
+            <input id="surel" name="surel" type="email" placeholder="nama@email.com" autocomplete="username">
+          </span>
+        </div>
+
+        <div class="field">
+          <span class="field__row">
+            <label class="field__label" for="sandi">Kata Sandi</label>
+            <a class="link" href="#" data-todo="Layar lupa kata sandi belum digambar.">Lupa kata sandi?</a>
+          </span>
+          <span class="control">
+            <i data-icon="lock" data-size="18"></i>
+            <input id="sandi" name="sandi" type="password" placeholder="••••••••" autocomplete="current-password">
+            <button type="button" data-todo="Toggle lihat kata sandi belum dibuat di prototipe." aria-label="Lihat kata sandi"><i data-icon="eye" data-size="18"></i></button>
+          </span>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem"><button class="btn btn--primary btn--lg" type="submit">Masuk</button></p>
+
+      <p class="sep">Atau masuk dengan</p>
+
+      <div class="social">
+        <a class="social__btn" href="beranda.html"><i data-icon="google"></i> Google</a>
+        <a class="social__btn" href="beranda.html"><i data-icon="facebook" style="color:#1877f2"></i> Facebook</a>
+      </div>
+
+      <div class="auth__links">
+        <p>Belum punya akun? <a href="#" data-todo="Pendaftaran pengguna biasa ada di luar modul planner ini.">Daftar Sekarang</a></p>
+        <p>Financial Planner? <a href="daftar.html">Daftar sebagai Financial Planner</a></p>
+      </div>
+
+      <p class="auth__legal">Dengan masuk, Anda menyetujui Ketentuan Layanan dan Kebijakan Privasi AkFina.</p>
+    </form>
+  </section>
+
+</main>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

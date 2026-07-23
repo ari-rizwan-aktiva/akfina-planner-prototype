@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F-04 · Analisa Keuangan — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="4">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="langkah-4-tujuan.html" aria-label="Kembali ke Langkah 4"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-04 · Analisa Keuangan · Tahap 4</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Kertas kerja internal perencana keuangan — tidak memerlukan tanda tangan klien</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill pill--mute">Internal</span>
+        <a class="btn btn--secondary" href="langkah-1-profil.html">Buka data klien</a>
+        <a class="btn btn--primary" href="langkah-5-rekomendasi.html">Lanjut ke F-05 Rekomendasi</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+
+      <!-- F-03 A -->
+      <section class="card">
+        <p class="eyebrow">Bagian A</p>
+        <h2 class="card__title" style="margin:.25rem 0 1.25rem">Ringkasan laporan keuangan pribadi</h2>
+        <div class="grid grid--4">
+          <div>
+            <p class="eyebrow">Total aset</p>
+            <p style="font-size:var(--text-xl);font-weight:800;margin-top:.35rem">Rp 1.702.000.000</p>
+          </div>
+          <div>
+            <p class="eyebrow">Total kewajiban</p>
+            <p style="font-size:var(--text-xl);font-weight:800;margin-top:.35rem">Rp 733.500.000</p>
+          </div>
+          <div>
+            <p class="eyebrow">Kekayaan bersih</p>
+            <p style="font-size:var(--text-xl);font-weight:800;margin-top:.35rem;color:hsl(var(--primary))">Rp 968.500.000</p>
+          </div>
+          <div>
+            <p class="eyebrow">Surplus arus kas / bulan</p>
+            <p style="font-size:var(--text-xl);font-weight:800;margin-top:.35rem">Rp 3.283.000</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Daftar asumsi — usulan, belum ada di formulir resmi -->
+      <section class="card card--flush">
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;padding:1.25rem 1.5rem;background:hsl(var(--palette-50) / .25)">
+          <div>
+            <p class="eyebrow">Daftar asumsi <span class="tag st-perbaikan">· di luar formulir resmi</span></p>
+            <h2 class="card__title" style="margin-top:.25rem">Asumsi yang dipakai seluruh perhitungan di bawah</h2>
+          </div>
+          <span class="pill pill--warn push">Belum dikunci</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th scope="col">Asumsi</th><th scope="col" class="num">Nilai</th><th scope="col">Sumber / alasan</th><th scope="col">Disetujui klien</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Inflasi umum</td><td class="num"><b>4,5%</b></td><td>BPS · rata-rata inflasi 2021–2025</td><td class="st-sehat">Disetujui 21 Jul 2026</td></tr>
+              <tr><td>Inflasi biaya pendidikan</td><td class="num"><b>10,0%</b></td><td>Rata-rata kenaikan 5 tahun di sekolah target</td><td class="st-sehat">Disetujui 21 Jul 2026</td></tr>
+              <tr><td>Imbal hasil portofolio (moderat)</td><td class="num"><b>9,0%</b></td><td>Campuran RD pasar uang &amp; saham sesuai profil moderat</td><td class="st-sehat">Disetujui 21 Jul 2026</td></tr>
+              <tr><td>Kenaikan penghasilan tahunan</td><td class="num"><b>6,0%</b></td><td>Kebijakan kenaikan berkala perusahaan klien</td><td class="st-kritis">Menunggu persetujuan</td></tr>
+              <tr><td>Harapan hidup</td><td class="num"><b>82 tahun</b></td><td>BPS · angka harapan hidup</td><td class="st-kritis">Menunggu persetujuan</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="notice notice--warn" style="margin:1rem 1.5rem 1.5rem;border-radius:.5rem">
+          <div class="notice__body">
+            <p class="notice__title st-perbaikan">Tabel ini belum ada di Formulir Perencanaan Keuangan</p>
+            <p class="notice__text">
+              Usulan tambahan supaya angka kesenjangan bisa direproduksi saat peninjauan bulan ke-12.
+              Perlu keputusan: diangkat jadi bagian resmi F-04, atau dibuang.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-03 B -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <p class="eyebrow">Bagian B</p>
+          <h2 class="card__title" style="margin-top:.25rem">Analisa rasio keuangan</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Rasio keuangan</th>
+                <th scope="col" class="num">Nilai klien</th>
+                <th scope="col">Tolok ukur ideal</th>
+                <th scope="col">Terhadap tolok ukur</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rasio likuiditas</td><td class="num"><b>2,4 bulan</b></td><td>≥ 3–6 bulan</td>
+                <td style="min-width:9rem"><span class="bar bar--krit" style="display:block"><i style="width:40%"></i></span></td>
+                <td class="st-kritis">Perlu perbaikan</td>
+              </tr>
+              <tr>
+                <td>Rasio menabung</td><td class="num"><b>8,3%</b></td><td>≥ 10%</td>
+                <td><span class="bar bar--warn" style="display:block"><i style="width:83%"></i></span></td>
+                <td class="st-perbaikan">Perlu perbaikan</td>
+              </tr>
+              <tr>
+                <td>Rasio cicilan utang</td><td class="num"><b>28,3%</b></td><td>≤ 30%</td>
+                <td><span class="bar" style="display:block"><i style="width:94%"></i></span></td>
+                <td class="st-sehat">Baik</td>
+              </tr>
+              <tr>
+                <td>Rasio utang terhadap aset</td><td class="num"><b>43,1%</b></td><td>≤ 50%</td>
+                <td><span class="bar" style="display:block"><i style="width:86%"></i></span></td>
+                <td class="st-sehat">Baik</td>
+              </tr>
+              <tr>
+                <td>Rasio aset investasi</td><td class="num"><b>30,7%</b></td><td>≥ 50%</td>
+                <td><span class="bar bar--krit" style="display:block"><i style="width:61%"></i></span></td>
+                <td class="st-kritis">Perlu perbaikan</td>
+              </tr>
+              <tr>
+                <td>Rasio solvabilitas</td><td class="num"><b>56,9%</b></td><td>≥ 35%</td>
+                <td><span class="bar" style="display:block"><i style="width:100%"></i></span></td>
+                <td class="st-sehat">Baik</td>
+              </tr>
+              <tr>
+                <td>Rasio kemampuan pelunasan utang <span class="tag st-perbaikan">· definisi perlu ditetapkan</span></td>
+                <td class="num"><b>33,3%</b></td><td>≤ 35%</td>
+                <td><span class="bar" style="display:block"><i style="width:95%"></i></span></td>
+                <td class="st-sehat">Baik</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="panel__foot">
+          Rasio ketujuh dihitung dari cicilan ÷ penghasilan <b>neto</b> (Rp 11.150.000 ÷ Rp 33.500.000),
+          sedangkan rasio cicilan utang memakai penghasilan total. Dua rasio ini bertumpuk dan
+          ambangnya beda — definisinya perlu ditetapkan resmi supaya tidak membingungkan klien.
+        </p>
+      </section>
+
+      <!-- F-03 C -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian C</p>
+            <h2 class="card__title" style="margin-top:.25rem">Analisa kebutuhan tiap tujuan</h2>
+          </div>
+          <p class="card__note">Nilai masa depan memakai asumsi di atas</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Tujuan</th>
+                <th scope="col" class="num">Nilai masa depan (Rp)</th>
+                <th scope="col" class="num">Dana tersedia (Rp)</th>
+                <th scope="col" class="num">Kesenjangan (Rp)</th>
+                <th scope="col" class="num">Investasi/bulan (Rp)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dana darurat</td>
+                <td class="num">226.300.000</td><td class="num">85.000.000</td>
+                <td class="num st-kritis"><b>141.300.000</b></td><td class="num"><b>11.580.000</b></td>
+              </tr>
+              <tr>
+                <td>Pendidikan anak 1 · Kayla</td>
+                <td class="num">385.800.000</td><td class="num">40.000.000</td>
+                <td class="num st-kritis"><b>345.800.000</b></td><td class="num"><b>2.472.000</b></td>
+              </tr>
+              <tr>
+                <td>Pendidikan anak 2 · Arkan</td>
+                <td class="num">564.900.000</td><td class="num">20.000.000</td>
+                <td class="num st-kritis"><b>544.900.000</b></td><td class="num"><b>2.114.000</b></td>
+              </tr>
+              <tr>
+                <td>Dana pensiun</td>
+                <td class="num">3.975.300.000</td><td class="num">150.000.000</td>
+                <td class="num st-kritis"><b>3.825.300.000</b></td><td class="num"><b>7.133.000</b></td>
+              </tr>
+              <tr>
+                <td>Naik haji berdua</td>
+                <td class="num">299.400.000</td><td class="num t-subtle">—</td>
+                <td class="num st-perbaikan"><b>299.400.000</b></td><td class="num"><b>2.572.000</b></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="notice notice--warn" style="margin:1rem 1.5rem 1.5rem;border-radius:.5rem">
+          <div class="notice__body">
+            <p class="notice__title st-perbaikan">Total setoran yang dibutuhkan Rp 25.871.000 / bulan</p>
+            <p class="notice__text">
+              Surplus hanya <b>Rp 3.283.000</b> — kurang delapan kali lipat. Prioritas, jangka waktu,
+              dan besaran tujuan harus dinegosiasi ulang bersama klien di F-05.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-03 D -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <p class="eyebrow">Bagian D</p>
+          <h2 class="card__title" style="margin-top:.25rem">Analisa aspek lain</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Aspek</th><th scope="col">Kondisi saat ini</th><th scope="col">Temuan / masalah</th></tr></thead>
+            <tbody>
+              <tr>
+                <td class="table__name">Proteksi</td>
+                <td>UP jiwa permanen Rp 1 miliar; group life Rp 200 juta dari kantor</td>
+                <td class="st-perbaikan">Group life hilang bila berhenti bekerja. Polis jiwa belum diserahkan untuk diverifikasi.</td>
+              </tr>
+              <tr>
+                <td class="table__name">Pensiun</td>
+                <td>Belum ada dana pensiun khusus di luar DPLK kantor</td>
+                <td class="st-kritis">Kesenjangan terbesar, Rp 3,83 miliar. Jangka 18 tahun masih memungkinkan bila mulai sekarang.</td>
+              </tr>
+              <tr>
+                <td class="table__name">Pajak</td>
+                <td>NPWP aktif, PPh 21 dipotong perusahaan</td>
+                <td class="st-perbaikan">Penghasilan sewa ruko Cimahi belum dilaporkan di SPT.</td>
+              </tr>
+              <tr>
+                <td class="table__name">Waris</td>
+                <td>Belum ada wasiat. Rumah dan ruko atas nama klien</td>
+                <td class="st-kritis">Dua anak masih di bawah umur, tidak ada pembagian tertulis maupun wali yang ditunjuk.</td>
+              </tr>
+              <tr>
+                <td class="table__name">Investasi</td>
+                <td>Aset produktif 30,7%; mayoritas kekayaan di properti guna pakai</td>
+                <td class="st-perbaikan">Perlu realokasi bertahap. Kartu kredit bunga 26% harus dilunasi lebih dulu.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- F-03 E -->
+      <section class="card">
+        <p class="eyebrow">Bagian E</p>
+        <h2 class="card__title" style="margin:.25rem 0 1.25rem">Rangkuman potensi &amp; masalah keuangan klien</h2>
+
+        <div class="grid grid--2">
+          <div>
+            <p class="eyebrow st-sehat">Potensi (kekuatan)</p>
+            <ul class="rows" style="margin-top:.5rem">
+              <li><p class="row" style="padding:.5rem 0">Dua pencari nafkah, arus kas masih surplus</p></li>
+              <li><p class="row" style="padding:.5rem 0">Solvabilitas 56,9% dan utang terhadap aset 43,1% — keduanya sehat</p></li>
+              <li><p class="row" style="padding:.5rem 0">Sudah punya proteksi jiwa permanen Rp 1 miliar</p></li>
+              <li><p class="row" style="padding:.5rem 0">Ada aset produktif yang menghasilkan: ruko disewakan</p></li>
+              <li><p class="row" style="padding:.5rem 0">Jangka pensiun 18 tahun masih panjang</p></li>
+            </ul>
+          </div>
+          <div>
+            <p class="eyebrow st-kritis">Masalah (kelemahan)</p>
+            <ul class="rows" style="margin-top:.5rem">
+              <li><p class="row" style="padding:.5rem 0">Dana darurat baru 2,4 bulan dari minimum 3 bulan</p></li>
+              <li><p class="row" style="padding:.5rem 0">Kartu kredit Rp 18,5 juta berbunga 26% per tahun</p></li>
+              <li><p class="row" style="padding:.5rem 0">Aset produktif 30,7%, jauh dari tolok ukur 50%</p></li>
+              <li><p class="row" style="padding:.5rem 0">Kebutuhan setoran 8× lipat surplus yang tersedia</p></li>
+              <li><p class="row" style="padding:.5rem 0">Belum ada wasiat padahal dua anak di bawah umur</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-end">
+          <div style="flex:1 1 20rem">
+            <p class="eyebrow">Kertas kerja internal</p>
+            <p style="font-size:var(--text-xs);color:hsl(var(--fg-muted));margin-top:.35rem">
+              Formulir ini tidak memerlukan tanda tangan klien. Persetujuan klien diminta di
+              F-03 (kebenaran data) dan
+              F-05 (menyetujui rekomendasi).
+            </p>
+          </div>
+          <div style="display:flex;gap:2.5rem;flex-wrap:wrap">
+            <div><p class="eyebrow">Disusun oleh</p><p class="strong">Ari Rizwan, CFP</p></div>
+            <div><p class="eyebrow">Diperiksa</p><p class="strong">Marsan, CFP</p></div>
+            <div><p class="eyebrow">Tanggal</p><p class="strong">22 Juli 2026</p></div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

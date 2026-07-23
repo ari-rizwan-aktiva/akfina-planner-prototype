@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Peta Layar · Modul Financial Planner AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body>
+
+<main class="mapwrap">
+  <img src="assets/logo-akfina.png" width="709" height="176" alt="AkFina"
+       style="display:block;width:11.25rem;height:auto;margin-bottom:1.75rem">
+  <p class="eyebrow">AkFina · Modul Financial Planner</p>
+  <h1 style="font-size:clamp(1.5rem,3vw,2.25rem);font-weight:800;letter-spacing:-.02em;margin:.35rem 0 .5rem">
+    Peta layar prototipe
+  </h1>
+  <p style="color:hsl(var(--fg-muted));max-width:46rem">
+    Enam belas layar. Mengikuti <b>paket enam formulir F-01 s.d. F-06</b> sesuai wireframe
+    atasan, dengan pembagian peran siapa mengisi apa.
+  </p>
+
+  <p class="role-legend" style="margin-top:1.25rem">
+    <span class="role role--klien">Diisi klien</span>
+    <span class="role role--fp">Diisi FP</span>
+    <span class="role role--fp-klien">Disusun FP, disetujui klien</span>
+    <span class="role role--sistem">Dihitung sistem</span>
+  </p>
+
+  <h2 class="eyebrow" style="margin-top:2.5rem">Sisi klien</h2>
+  <div class="mapgrid">
+    <a class="mapcard" href="klien-f01.html"><span class="eyebrow">Tanpa akun</span><b>Isi F-01 lewat tautan</b><span>Pintu masuk pertama klien, sebelum punya akun</span></a>
+    <a class="mapcard" href="klien-portal.html"><span class="eyebrow">Sudah punya akun</span><b>Perencanaan Keuangan Saya</b><span>Di dalam AkFina biasa, bukan tampilan planner</span></a>
+  </div>
+
+  <h2 class="eyebrow" style="margin-top:2.5rem">Sisi planner · sebelum masuk</h2>
+  <div class="mapgrid">
+    <a class="mapcard" href="masuk.html"><span class="eyebrow">Auth</span><b>Masuk</b><span>Google, Facebook, atau email</span></a>
+    <a class="mapcard" href="daftar.html"><span class="eyebrow">Auth</span><b>Daftar sebagai Planner</b><span>Empat field, sertifikat menyusul</span></a>
+  </div>
+
+  <h2 class="eyebrow" style="margin-top:2.5rem">Sisi planner · ruang kerja</h2>
+  <div class="mapgrid">
+    <a class="mapcard" href="beranda.html"><span class="eyebrow">App</span><b>Beranda</b><span>Antrean kerja, bukan grafik</span></a>
+    <a class="mapcard" href="klien.html"><span class="eyebrow">App</span><b>Input Data Klien</b><span>Roster 12 klien</span></a>
+    <a class="mapcard" href="klien-baru.html"><span class="eyebrow">App</span><b>Tambah Klien Baru</b><span>Kirim tautan, scan OCR, atau isi manual</span></a>
+    <a class="mapcard" href="scan-ocr.html"><span class="eyebrow">App</span><b>Scan Form Kertas → OCR</b><span>Hasil baca dengan tingkat keyakinan</span></a>
+  </div>
+
+  <h2 class="eyebrow" style="margin-top:2.5rem">Perjalanan klien · enam formulir</h2>
+  <div class="mapgrid">
+    <a class="mapcard" href="langkah-1-profil.html"><span class="eyebrow">F-01 · Grup A</span><b>Identifikasi &amp; Kelayakan</b><span>A–E klien, F kelayakan hanya FP</span></a>
+    <a class="mapcard" href="kesepakatan.html"><span class="eyebrow">F-02 · Grup A</span><b>Kesepakatan Layanan</b><span>Lingkup, biaya jasa, consent PDP</span></a>
+    <a class="mapcard" href="langkah-2-neraca.html"><span class="eyebrow">F-03 A/B/D</span><b>Aset, kewajiban, proteksi</b><span>Sub-layar pertama dari F-03</span></a>
+    <a class="mapcard" href="langkah-3-arus-kas.html"><span class="eyebrow">F-03 C</span><b>Arus kas</b><span>Pemasukan &amp; pengeluaran bulanan</span></a>
+    <a class="mapcard" href="langkah-4-tujuan.html"><span class="eyebrow">F-03 E/F/G</span><b>Tujuan, profil risiko, konfirmasi</b><span>Sub-layar terakhir dari F-03</span></a>
+    <a class="mapcard" href="kertas-kerja.html"><span class="eyebrow">F-04 · Grup B</span><b>Analisa Keuangan</b><span>Internal — klien tidak melihat</span></a>
+    <a class="mapcard" href="langkah-5-rekomendasi.html"><span class="eyebrow">F-05 · Grup B</span><b>Rekomendasi &amp; Rencana Aksi</b><span>Alokasi bulanan, konsekuensi pilihan</span></a>
+    <a class="mapcard" href="serah-terima.html"><span class="eyebrow">F-06 · Grup A</span><b>Serah Terima &amp; Peninjauan</b><span>Berita acara, review bulan 3/6/12</span></a>
+  </div>
+
+  <h2 class="eyebrow" style="margin-top:2.5rem">Catatan acuan</h2>
+  <div style="max-width:46rem;margin-top:.75rem;display:grid;gap:.75rem">
+    <p style="font-size:.8125rem;color:hsl(var(--fg-muted))">
+      <b>Grup A = hubungan bisnis FP–klien</b> (F-01, F-02, F-06 + Klausul Kerahasiaan).
+      <b>Grup B = proses perencanaan keuangan</b> (F-03, F-04, F-05).
+    </p>
+    <p style="font-size:.8125rem;color:hsl(var(--fg-muted))">
+      <b>F-03 terbagi ke tiga layar</b> karena satu formulir kertas terlalu panjang untuk satu
+      layar. Stepper menandai sub-bagiannya.
+    </p>
+    <p style="font-size:.8125rem;color:hsl(var(--fg-muted))">
+      <b>Belum ada:</b> Klausul Kerahasiaan (posisinya belum dikonfirmasi), tampilan klien untuk
+      F-03 dan F-05, serta pengganti tanda tangan basah.
+    </p>
+  </div>
+
+  <p style="margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid hsl(var(--line));font-size:var(--text-xs);color:hsl(var(--fg-subtle));max-width:46rem">
+    Prototipe statis. Tidak ada data yang disimpan, tidak ada backend. Tombol yang layarnya
+    belum digambar akan memberi tahu, bukan diam. Keputusan desain dan yang masih terbuka
+    dicatat di <code>keputusan-modul-planner.md</code> dan <code>HANDOFF.md</code>.
+  </p>
+</main>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

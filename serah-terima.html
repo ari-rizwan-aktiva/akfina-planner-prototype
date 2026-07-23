@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F-06 · Serah Terima &amp; Peninjauan Berkala — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="6">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="langkah-5-rekomendasi.html" aria-label="Kembali ke Langkah 5"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-06 · Serah Terima Laporan &amp; Peninjauan Berkala · Tahap 6</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Presentasi dijadwalkan 5 Agustus 2026 — belum terlaksana</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill pill--warn">Menunggu presentasi</span>
+        <button class="btn btn--secondary" type="button" data-todo="Ubah jadwal belum disambungkan di prototipe.">Ubah jadwal</button>
+        <span class="btn" aria-disabled="true">Tutup engagement</span>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+
+      <!-- F-05 A -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian A</p>
+            <h2 class="card__title" style="margin-top:.25rem">Dokumen yang diserahkan</h2>
+          </div>
+          <p class="card__note">3 dari 4 dokumen siap</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Dokumen</th>
+                <th scope="col">Format</th>
+                <th scope="col" class="num">Jumlah halaman</th>
+                <th scope="col">Diterima klien</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__name">Laporan Final Perencanaan Keuangan (Book Plan)</td>
+                <td>MS Word / PDF</td><td class="num">34</td>
+                <td class="t-subtle">Belum diserahkan</td>
+              </tr>
+              <tr>
+                <td class="table__name">Materi Presentasi Perencanaan Keuangan</td>
+                <td>PowerPoint / PDF</td><td class="num">22</td>
+                <td class="t-subtle">Belum diserahkan</td>
+              </tr>
+              <tr>
+                <td class="table__name">Lampiran perhitungan &amp; analisa</td>
+                <td>PDF / Excel</td><td class="num">11</td>
+                <td class="t-subtle">Belum diserahkan</td>
+              </tr>
+              <tr>
+                <td class="table__name">Seluruh formulir yang telah diisi</td>
+                <td>Cetak / PDF</td>
+                <td class="num st-perbaikan">Belum lengkap</td>
+                <td class="st-perbaikan">F-05 belum ditandatangani klien</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <div class="grid grid--main-side">
+        <!-- F-05 B -->
+        <section class="card">
+          <div class="card__head card__head--plain">
+            <div>
+              <p class="eyebrow">Bagian B</p>
+              <h2 class="card__title">Berita acara presentasi</h2>
+            </div>
+          </div>
+
+          <div class="grid grid--2" style="gap:1.25rem">
+            <div class="field">
+              <label class="field__label" for="tglpres">Tanggal presentasi</label>
+              <span class="control"><input id="tglpres" type="text" value="5 Agustus 2026"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="tempat">Tempat / media</label>
+              <span class="control"><input id="tempat" type="text" value="Kantor AkFina Bandung + Zoom"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="durasi">Durasi</label>
+              <span class="control"><input id="durasi" type="text" value="90 menit (rencana)"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="peserta">Peserta hadir</label>
+              <span class="control"><input id="peserta" type="text" value="John, Anisa, Ari Rizwan CFP"></span>
+            </div>
+          </div>
+
+          <div class="table-wrap" style="margin-top:1.25rem">
+            <table class="table table--tight">
+              <thead><tr><th scope="col">Catatan / pertanyaan klien saat presentasi</th><th scope="col">Tanggapan perencana</th></tr></thead>
+              <tbody>
+                <tr>
+                  <td class="t-subtle">Diisi saat presentasi berlangsung</td>
+                  <td class="t-subtle">—</td>
+                </tr>
+                <tr>
+                  <td class="t-subtle">—</td>
+                  <td class="t-subtle">—</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- F-05 C -->
+        <section class="card">
+          <div class="card__head card__head--plain">
+            <div>
+              <p class="eyebrow">Bagian C</p>
+              <h2 class="card__title">Pemahaman &amp; persetujuan klien</h2>
+            </div>
+          </div>
+
+          <div class="grid" style="gap:1rem">
+            <p class="check">
+              <input id="c1" type="checkbox" disabled>
+              <label for="c1">Klien memahami seluruh analisa yang disampaikan</label>
+            </p>
+            <p class="check">
+              <input id="c2" type="checkbox" disabled>
+              <label for="c2">Klien memahami rekomendasi dan konsekuensi pilihannya</label>
+            </p>
+            <p class="check">
+              <input id="c3" type="checkbox" disabled>
+              <label for="c3">Klien menyetujui rencana aksi pada Formulir F-05</label>
+            </p>
+          </div>
+
+          <p style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid hsl(var(--line));font-size:var(--text-xs);color:hsl(var(--fg-subtle))">
+            Ketiganya baru bisa dicentang setelah presentasi berlangsung.
+          </p>
+        </section>
+      </div>
+
+      <!-- F-05 D -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian D</p>
+            <h2 class="card__title" style="margin-top:.25rem">Jadwal peninjauan berkala</h2>
+          </div>
+          <p class="card__note">Target tanggal dihitung dari tanggal presentasi</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Peninjauan</th>
+                <th scope="col">Fokus peninjauan</th>
+                <th scope="col">Target tanggal</th>
+                <th scope="col">Realisasi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__name">Bulan ke-3</td>
+                <td>Kepatuhan arus kas &amp; dana darurat</td>
+                <td>5 November 2026</td>
+                <td class="t-subtle">—</td>
+              </tr>
+              <tr>
+                <td class="table__name">Bulan ke-6</td>
+                <td>Kinerja investasi &amp; pelunasan utang</td>
+                <td>5 Februari 2027</td>
+                <td class="t-subtle">—</td>
+              </tr>
+              <tr>
+                <td class="table__name">Bulan ke-12</td>
+                <td>Peninjauan menyeluruh atas seluruh tujuan</td>
+                <td>5 Agustus 2027</td>
+                <td class="t-subtle">—</td>
+              </tr>
+              <tr>
+                <td class="table__name">Kondisi khusus</td>
+                <td>Perubahan penghasilan, kelahiran, pindah kerja</td>
+                <td class="t-subtle">Sewaktu-waktu</td>
+                <td class="t-subtle">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="panel__foot">
+          Rencana keuangan bersifat dinamis. Peninjauan berkala diperlukan agar rencana tetap
+          sesuai dengan kondisi klien.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="grid grid--2">
+          <div>
+            <p class="eyebrow">Klien</p>
+            <p class="strong">John Doe</p>
+            <p class="t-meta">Ditandatangani saat serah terima</p>
+          </div>
+          <div>
+            <p class="eyebrow">Perencana keuangan</p>
+            <p class="strong">Ari Rizwan, CFP</p>
+            <p class="t-meta">Ditandatangani saat serah terima</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

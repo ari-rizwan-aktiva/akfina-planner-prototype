@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Input Data Klien · AkFina Financial Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <div class="topbar__titles">
+        <h1 class="topbar__title">Input Data Klien</h1>
+        <p class="topbar__sub">12 klien aktif · 4 perlu tindakan Anda</p>
+      </div>
+      <div class="topbar__tools">
+        <label class="visually-hidden" for="cari">Cari nama klien</label>
+        <span class="control control--sm" style="width:14rem">
+          <i data-icon="search" data-size="14"></i>
+          <input id="cari" type="search" placeholder="Cari nama klien…" autocomplete="off">
+        </span>
+        <label class="visually-hidden" for="tahap">Filter tahap</label>
+        <span class="control control--sm" style="width:11rem">
+          <!-- Enam formulir, sama dengan stepper di layar klien. Sebelumnya
+               masih lima langkah data — dua sistem penomoran untuk hal yang sama. -->
+          <select id="tahap">
+            <option value="">Semua tahap</option>
+            <option value="F-01">F-01 · Identifikasi</option>
+            <option value="F-02">F-02 · Kesepakatan</option>
+            <option value="F-03">F-03 · Data &amp; Tujuan</option>
+            <option value="F-04">F-04 · Analisa</option>
+            <option value="F-05">F-05 · Rekomendasi</option>
+            <option value="F-06">F-06 · Serah Terima</option>
+          </select>
+          <i data-icon="chevron-down" data-size="14"></i>
+        </span>
+        <a class="btn btn--primary" href="klien-baru.html"><i data-icon="plus" data-size="15"></i> Klien Baru</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="card card--flush">
+        <div class="table-wrap">
+          <!-- Urutan baris = kegentingan: perlu tindakan Anda dulu (paling telat
+               di atas), lalu menunggu klien (paling lama menunggu), lalu terjadwal
+               (tanggal terdekat). Roster menjawab pertanyaan yang sama dengan
+               Beranda: mulai dari mana hari ini. -->
+          <table class="table table--brand" id="roster">
+            <caption class="visually-hidden">Daftar klien yang dikelompokkan di bawah akun planner Anda, diurutkan berdasarkan kegentingan</caption>
+            <thead>
+              <tr>
+                <th scope="col">Nama klien</th>
+                <th scope="col">Tahap</th>
+                <th scope="col" class="num">Kekayaan bersih</th>
+                <th scope="col">Perlu tindakan</th>
+                <th scope="col"><span class="visually-hidden">Buka berkas</span></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <!-- ── Perlu tindakan Anda ─────────────────────────────────── -->
+              <tr class="row-link" data-nama="Dewi Lestari" data-tahap="F-03">
+                <td><p class="table__name"><a href="scan-ocr.html">Dewi Lestari</a></p>
+                    <p class="table__sub">Belum punya akun · sejak 2 Jun 2026</p></td>
+                <td style="min-width:11.5rem"><p>F-03 · Data &amp; Tujuan</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:50%"></i></p></td>
+                <td class="num t-subtle">—</td>
+                <td><span class="chip chip--anda"><i data-icon="alert-triangle" data-size="11"></i> Form kertas menunggu di-scan · 6 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Budi Santoso" data-tahap="F-06">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Budi Santoso</a></p>
+                    <p class="table__sub">Akun aktif · sejak 12 Mar 2026</p></td>
+                <td><p>F-06 · Serah Terima</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:100%"></i></p></td>
+                <td class="num">Rp 450.000.000</td>
+                <td><span class="chip chip--anda"><i data-icon="alert-triangle" data-size="11"></i> Review bulan-6 telat · 4 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Hendra Wijaya" data-tahap="F-04">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Hendra Wijaya</a></p>
+                    <p class="table__sub">Akun aktif · sejak 8 Mei 2026</p></td>
+                <td><p>F-04 · Analisa</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:67%"></i></p></td>
+                <td class="num">Rp 1.680.000.000</td>
+                <td><span class="chip chip--anda"><i data-icon="alert-triangle" data-size="11"></i> Analisa tertunda · 3 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Maya Anggraini" data-tahap="F-01">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Maya Anggraini</a></p>
+                    <p class="table__sub">Belum punya akun · sejak 21 Jul 2026</p></td>
+                <td><p>F-01 · Identifikasi</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:17%"></i></p></td>
+                <td class="num t-subtle">—</td>
+                <td><span class="chip chip--anda"><i data-icon="alert-triangle" data-size="11"></i> Kelayakan belum dinilai · 2 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <!-- ── Menunggu klien ──────────────────────────────────────── -->
+              <tr class="row-link" data-nama="Rina Kusuma" data-tahap="F-04">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Rina Kusuma</a></p>
+                    <p class="table__sub">Akun aktif · sejak 21 Apr 2026</p></td>
+                <td><p>F-04 · Analisa</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:67%"></i></p></td>
+                <td class="num">Rp 720.000.000</td>
+                <td><span class="chip chip--klien"><i data-icon="clock" data-size="11"></i> Asumsi menunggu tanda tangan · 9 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="John Doe" data-tahap="F-05">
+                <td><p class="table__name"><a href="langkah-1-profil.html">John Doe</a></p>
+                    <p class="table__sub">Akun aktif · sejak 21 Jul 2026</p></td>
+                <td><p>F-05 · Rekomendasi</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:83%"></i></p></td>
+                <td class="num">Rp 968.500.000</td>
+                <td><span class="chip chip--klien"><i data-icon="clock" data-size="11"></i> Rekomendasi menunggu persetujuan · 5 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Agus Firmansyah" data-tahap="F-02">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Agus Firmansyah</a></p>
+                    <p class="table__sub">Akun aktif · sejak 15 Jul 2026</p></td>
+                <td><p>F-02 · Kesepakatan</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:33%"></i></p></td>
+                <td class="num t-subtle">—</td>
+                <td><span class="chip chip--klien"><i data-icon="clock" data-size="11"></i> Kesepakatan menunggu tanda tangan · 3 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Putri Handayani" data-tahap="F-03">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Putri Handayani</a></p>
+                    <p class="table__sub">Akun aktif · sejak 19 Jul 2026</p></td>
+                <td><p>F-03 · Data &amp; Tujuan</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:50%"></i></p></td>
+                <td class="num t-subtle">—</td>
+                <td><span class="chip chip--klien"><i data-icon="clock" data-size="11"></i> Form digital belum diisi · 2 hari</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <!-- ── Terjadwal ───────────────────────────────────────────── -->
+              <tr class="row-link" data-nama="Sari Wijayanti" data-tahap="F-05">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Sari Wijayanti</a></p>
+                    <p class="table__sub">Akun aktif · sejak 4 Feb 2026</p></td>
+                <td><p>F-05 · Rekomendasi</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:83%"></i></p></td>
+                <td class="num">Rp 1.235.000.000</td>
+                <td><span class="chip chip--jadwal"><i data-icon="calendar" data-size="11"></i> Presentasi rencana · 24 Jul</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Tono Prasetyo" data-tahap="F-06">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Tono Prasetyo</a></p>
+                    <p class="table__sub">Akun aktif · sejak 9 Sep 2025</p></td>
+                <td><p>F-06 · Serah Terima</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:100%"></i></p></td>
+                <td class="num">Rp 2.100.000.000</td>
+                <td><span class="chip chip--jadwal"><i data-icon="calendar" data-size="11"></i> Review bulan-3 · 12 Agu</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Bagus Setiawan" data-tahap="F-06">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Bagus Setiawan</a></p>
+                    <p class="table__sub">Akun aktif · sejak 3 Sep 2025</p></td>
+                <td><p>F-06 · Serah Terima</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:100%"></i></p></td>
+                <td class="num">Rp 3.420.000.000</td>
+                <td><span class="chip chip--jadwal"><i data-icon="calendar" data-size="11"></i> Review bulan-12 · 3 Sep</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <tr class="row-link" data-nama="Nadia Puspita" data-tahap="F-06">
+                <td><p class="table__name"><a href="langkah-1-profil.html">Nadia Puspita</a></p>
+                    <p class="table__sub">Akun aktif · sejak 18 Mar 2026</p></td>
+                <td><p>F-06 · Serah Terima</p>
+                    <p class="bar" style="margin-top:.4rem;max-width:7rem"><i style="width:100%"></i></p></td>
+                <td class="num">Rp 615.000.000</td>
+                <td><span class="chip chip--jadwal"><i data-icon="calendar" data-size="11"></i> Review bulan-6 · 18 Sep</span></td>
+                <td class="num t-subtle"><i data-icon="chevron-right" data-size="15"></i></td>
+              </tr>
+
+              <!-- Jalan buntu tanpa pintu keluar adalah hal yang paling bikin
+                   frustrasi. Disembunyikan sampai penyaring tidak menemukan apa pun. -->
+              <tr class="roster__empty" hidden>
+                <td colspan="5">
+                  <div class="emptystate">
+                    <i data-icon="search" data-size="22"></i>
+                    <p class="emptystate__title">Tidak ada klien yang cocok</p>
+                    <p class="emptystate__text" id="emptyDetail">Coba kata kunci lain, atau tambahkan klien baru.</p>
+                    <p class="emptystate__actions">
+                      <button class="btn btn--secondary" type="button" id="resetFilter">Hapus pencarian</button>
+                      <a class="btn btn--primary" href="klien-baru.html"><i data-icon="plus" data-size="15"></i> Klien Baru</a>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="roster__legend">
+        <span id="rosterCount">12 klien</span>
+        <span class="push chip chip--anda"><i data-icon="alert-triangle" data-size="11"></i> Perlu tindakan Anda</span>
+        <span class="chip chip--klien"><i data-icon="clock" data-size="11"></i> Menunggu klien</span>
+        <span class="chip chip--jadwal"><i data-icon="calendar" data-size="11"></i> Terjadwal</span>
+      </p>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

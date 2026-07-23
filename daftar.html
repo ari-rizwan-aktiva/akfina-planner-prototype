@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daftar sebagai Financial Planner · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body>
+
+<main class="auth">
+
+  <section class="auth__brand">
+    <span class="auth__mark"><i data-icon="wallet" data-size="30"></i></span>
+
+    <h1 class="auth__headline">Kelola Keuangan Anda dengan Lebih Cerdas</h1>
+    <p class="auth__sub">
+      Platform finansial modern untuk membantu Anda merencanakan masa depan
+      dengan analisis data yang akurat.
+    </p>
+
+    <div class="auth__cards">
+      <div class="auth__card">
+        <span class="auth__cardico"><i data-icon="bar-chart" data-size="17"></i></span>
+        <b>Analisis Cerdas</b>
+        <p>Pantau pertumbuhan aset dan pengeluaran secara real-time.</p>
+      </div>
+      <div class="auth__card">
+        <span class="auth__cardico"><i data-icon="shield" data-size="17"></i></span>
+        <b>Data Aman &amp; Terlindungi</b>
+        <p>Kami terus memperbarui sistem untuk memastikan datamu tersimpan dengan aman.</p>
+      </div>
+    </div>
+
+    <p class="auth__foot">AkFina · Aplikasi Perencanaan Finansial by Aktiva</p>
+  </section>
+
+  <section class="auth__panel">
+    <!-- Indikator "1 · Akun / 2 · Profil profesional" dihapus: langkah 2 tidak
+         pernah digambar, jadi indikatornya menjanjikan layar yang tidak ada. -->
+    <form class="auth__form" data-go="beranda.html">
+
+      <span class="auth__logo"><img src="assets/logo-akfina.png" width="709" height="176" alt="AkFina"></span>
+
+      <h2 class="auth__title">Daftar sebagai Financial Planner</h2>
+      <p class="auth__lead">
+        Data minimal dulu. Nomor sertifikat dan profil profesional bisa dilengkapi
+        kapan saja di Pengaturan.
+      </p>
+
+      <div class="auth__fields">
+        <div class="field">
+          <label class="field__label" for="nama">Nama Lengkap</label>
+          <span class="control">
+            <i data-icon="users" data-size="18"></i>
+            <input id="nama" name="nama" type="text" placeholder="Sesuai identitas" required>
+          </span>
+        </div>
+        <div class="field">
+          <label class="field__label" for="uid">User ID</label>
+          <span class="control">
+            <i data-icon="pen-line" data-size="18"></i>
+            <input id="uid" name="uid" type="text" placeholder="nama.planner" required>
+          </span>
+        </div>
+        <div class="field">
+          <label class="field__label" for="surel">Alamat Email</label>
+          <span class="control">
+            <i data-icon="mail" data-size="18"></i>
+            <input id="surel" name="surel" type="email" placeholder="nama@email.com" required>
+          </span>
+        </div>
+        <div class="field">
+          <label class="field__label" for="sandi">Kata Sandi</label>
+          <span class="control">
+            <i data-icon="lock" data-size="18"></i>
+            <input id="sandi" name="sandi" type="password" placeholder="••••••••" required autocomplete="new-password">
+            <button type="button" data-todo="Toggle lihat kata sandi belum dibuat di prototipe." aria-label="Lihat kata sandi"><i data-icon="eye" data-size="18"></i></button>
+          </span>
+        </div>
+      </div>
+
+      <!-- Nomor sertifikat sengaja TIDAK jadi field, bahkan opsional.
+           Lihat keputusan-modul-planner.md § Masuk & Daftar. -->
+      <div class="notice" style="margin-top:1.5rem">
+        <div class="notice__body">
+          <p class="notice__title">Nomor sertifikat menyusul</p>
+          <p class="notice__text">
+            Bisa ditambahkan kapan saja di Pengaturan. Tanpa nomor itu Anda tetap bisa
+            menambah dan mengisi klien.
+          </p>
+        </div>
+      </div>
+
+      <p style="margin-top:1.5rem"><button class="btn btn--primary btn--lg" type="submit">Buat Akun Planner</button></p>
+
+      <p class="sep">Atau daftar dengan</p>
+
+      <div class="social">
+        <a class="social__btn" href="beranda.html"><i data-icon="google"></i> Google</a>
+        <a class="social__btn" href="beranda.html"><i data-icon="facebook" style="color:#1877f2"></i> Facebook</a>
+      </div>
+
+      <div class="auth__links">
+        <p>Sudah punya akun? <a href="masuk.html">Masuk</a></p>
+        <p>Bukan perencana? <a href="#" data-todo="Pendaftaran pengguna biasa ada di luar modul planner ini.">Daftar sebagai Pengguna</a></p>
+      </div>
+
+      <p class="auth__legal">Dengan mendaftar, Anda menyetujui Ketentuan Layanan dan Kebijakan Privasi.</p>
+    </form>
+  </section>
+
+</main>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

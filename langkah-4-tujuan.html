@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Langkah 4 · Tujuan Keuangan (F-03 E/F/G) — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="3" data-sub="Tujuan">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="klien.html" aria-label="Kembali ke daftar klien"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-03 · Data &amp; Tujuan · Bagian E, F, G</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Akun aktif sejak 21 Jul 2026 · F-03 diisi klien 25 Jul · diperiksa Ari Rizwan, CFP</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill">Langkah 4 · Tujuan keuangan</span>
+        <button class="btn btn--secondary" type="button" data-todo="Simpan draf belum disambungkan di prototipe.">Simpan draf</button>
+        <a class="btn btn--primary" href="langkah-5-rekomendasi.html">Lanjut ke Rekomendasi</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+      <!-- F-02 E -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian E</p>
+            <h2 class="card__title">Tujuan keuangan</h2>
+            <p class="t-note">
+              Diisi <b>biaya kini</b>, bukan nilai masa depan. Nilai masa depan dihitung di F-04 C.
+            </p>
+          </div>
+          <span class="pill">3 tujuan wajib terpenuhi</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No.</th>
+                <th scope="col">Tujuan keuangan</th>
+                <th scope="col" class="num">Jangka waktu (tahun)</th>
+                <th scope="col" class="num">Perkiraan biaya kini (Rp)</th>
+                <th scope="col" class="num">Prioritas (1–5)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><p class="table__name">Dana darurat 6 bulan pengeluaran</p><p class="table__sub">Wajib · 6 × Rp 36.100.000</p></td>
+                <td class="num">1</td><td class="num"><b>216.600.000</b></td><td class="num"><b class="st-kritis">1</b></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><p class="table__name">Dana pendidikan S1 · Kayla</p><p class="table__sub">Wajib · S1 dalam negeri, masuk 2034</p></td>
+                <td class="num">8</td><td class="num"><b>180.000.000</b></td><td class="num"><b>2</b></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><p class="table__name">Dana pensiun · usia 56</p><p class="table__sub">Wajib · harapan hidup 82 tahun</p></td>
+                <td class="num">18</td><td class="num"><b>1.800.000.000</b></td><td class="num"><b>2</b></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><p class="table__name">Dana pendidikan S1 · Arkan</p><p class="table__sub">Wajib · masuk 2038</p></td>
+                <td class="num">12</td><td class="num"><b>180.000.000</b></td><td class="num"><b>3</b></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td><p class="table__name">Naik haji berdua</p><p class="table__sub">Tambahan</p></td>
+                <td class="num">7</td><td class="num"><b>220.000.000</b></td><td class="num"><b>4</b></td>
+              </tr>
+              <tr>
+                <td class="t-subtle">6</td>
+                <td class="t-subtle" colspan="4">Baris kosong — tersedia sampai enam tujuan</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="padding:1rem 1.5rem 1.5rem;display:flex;gap:1rem;flex-wrap:wrap;align-items:center">
+          <button class="btn btn--outline" type="button" data-todo="Form tambah tujuan belum digambar."><i data-icon="plus" data-size="15"></i> Tambah tujuan</button>
+          <span class="t-meta">
+            Prioritas 1 = paling mendesak. Tujuan wajib mencakup dana darurat, pendidikan anak, dan pensiun.
+          </span>
+        </p>
+      </section>
+
+      <div class="grid grid--2">
+        <!-- F-02 F -->
+        <section class="card">
+          <div class="card__head card__head--plain">
+            <div>
+              <p class="eyebrow">Bagian F</p>
+              <h2 class="card__title">Profil risiko investasi</h2>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem">
+            <span class="pill pill--mute">Konservatif</span>
+            <span class="pill">Moderat</span>
+            <span class="pill pill--mute">Agresif</span>
+          </div>
+
+          <div class="grid grid--2" style="gap:1.25rem">
+            <div class="field">
+              <label class="field__label" for="skor">Skor kuesioner</label>
+              <span class="control"><input id="skor" type="text" value="27 dari 40"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="tglrisiko">Tanggal pengisian</label>
+              <span class="control"><input id="tglrisiko" type="text" value="20 / 07 / 2026"></span>
+            </div>
+          </div>
+
+          <p class="notice" style="margin-top:1.25rem">
+            <span class="notice__body">
+              <span class="notice__title">Lampiran wajib</span>
+              <span class="notice__text" style="display:block">
+                Formulir Profil Risiko Investasi dilampirkan terpisah. Skor di atas hanya
+                ringkasannya.
+              </span>
+            </span>
+          </p>
+        </section>
+
+        <!-- F-02 G -->
+        <section class="card">
+          <div class="card__head card__head--plain">
+            <div>
+              <p class="eyebrow">Bagian G</p>
+              <h2 class="card__title">Konfirmasi kebenaran data</h2>
+            </div>
+          </div>
+
+          <p style="font-size:.8125rem;color:hsl(var(--fg-muted))">
+            “Saya menyatakan bahwa seluruh data dan tujuan keuangan di atas telah saya periksa,
+            benar adanya, dan sesuai dengan yang ingin saya capai.”
+          </p>
+
+          <div class="grid grid--2" style="gap:1.25rem;margin-top:1.25rem">
+            <div>
+              <p class="eyebrow">Klien</p>
+              <p class="strong">John Doe</p>
+              <p class="t-meta">Ditandatangani 21 Jul 2026</p>
+              <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem;display:flex;align-items:center;gap:.35rem">
+                <i data-icon="check" data-size="13"></i> Sudah
+              </p>
+            </div>
+            <div>
+              <p class="eyebrow">Perencana keuangan</p>
+              <p class="strong">Ari Rizwan, CFP</p>
+              <p class="t-meta">Ditandatangani 21 Jul 2026</p>
+              <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem;display:flex;align-items:center;gap:.35rem">
+                <i data-icon="check" data-size="13"></i> Sudah
+              </p>
+            </div>
+          </div>
+
+          <p style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid hsl(var(--line));font-size:var(--text-xs);color:hsl(var(--fg-subtle))">
+            Tanda tangan ini yang mengunci data F-03. Perubahan setelah ini tercatat di riwayat.
+          </p>
+        </section>
+      </div>
+
+      <div class="notice">
+        <div class="notice__body">
+          <p class="notice__title">F-03 lengkap — analisa sudah bisa disusun</p>
+          <p class="notice__text">
+            Kesenjangan tiap tujuan, nilai masa depan, dan tujuh rasio dihitung di F-04 Analisa Keuangan.
+          </p>
+        </div>
+        <a class="btn btn--primary" href="kertas-kerja.html">Buka F-04 Analisa Keuangan</a>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

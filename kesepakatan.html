@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F-02 · Kesepakatan Layanan — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="2">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="langkah-1-profil.html" aria-label="Kembali ke F-01"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-02 · Kesepakatan Layanan · Grup A · Tahap 2</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Ditandatangani kedua pihak 21 Juli 2026 · engagement resmi berjalan</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill">Berlaku</span>
+        <button class="btn btn--secondary" type="button" data-todo="Unduh PDF belum disambungkan di prototipe.">Unduh PDF</button>
+        <a class="btn btn--primary" href="langkah-2-neraca.html">Lanjut ke F-03</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+      <div class="notice">
+        <div class="notice__body">
+          <p class="notice__title">Disusun FP, disetujui klien</p>
+          <p class="notice__text">
+            Klien membaca dan menandatangani formulir ini di akun AkFina miliknya. Akun ditawarkan
+            tepat setelah kelayakan F-01 lolos, sekalian sebagai undangan menandatangani.
+          </p>
+        </div>
+        <p class="role-legend">
+          <span class="role role--fp-klien">Disusun FP, disetujui klien</span>
+          <span class="role role--klien">Diisi klien</span>
+        </p>
+      </div>
+
+      <!-- F-02 A -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian A</p>
+            <h2 class="card__title">Identitas para pihak</h2>
+          </div>
+          <span class="role role--fp-klien push">Disusun FP, disetujui klien</span>
+        </div>
+
+        <div class="grid grid--2">
+          <div>
+            <p class="eyebrow">Perencana keuangan</p>
+            <p class="strong">Ari Rizwan, CFP</p>
+            <p class="t-meta">Reg. FP-2024-0192 · Kelas Madya</p>
+            <p class="t-meta">PT Aktiva Kreasi Investama</p>
+          </div>
+          <div>
+            <p class="eyebrow">Klien</p>
+            <p class="strong">John Doe</p>
+            <p class="t-meta">Bandung, Jawa Barat</p>
+            <p class="t-meta">Tanggal kesepakatan 21 Juli 2026</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-02 B -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian B</p>
+            <h2 class="card__title">Ruang lingkup layanan</h2>
+          </div>
+          <span class="role role--fp-klien push">Disusun FP, disetujui klien</span>
+        </div>
+
+        <p class="field__label" style="margin-bottom:.625rem">Lingkup yang disepakati — 9 dari 10</p>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem">
+          <span class="pill">Analisa laporan keuangan pribadi</span>
+          <span class="pill">Dana darurat</span>
+          <span class="pill">Pendidikan anak</span>
+          <span class="pill">Dana pensiun</span>
+          <span class="pill">Proteksi / asuransi</span>
+          <span class="pill">Investasi</span>
+          <span class="pill">Pelunasan utang</span>
+          <span class="pill">Pajak pribadi</span>
+          <span class="pill">Waris</span>
+          <span class="pill pill--mute">Bisnis / usaha — di luar lingkup</span>
+        </div>
+
+        <div class="grid grid--3" style="gap:1.25rem">
+          <div class="field">
+            <label class="field__label" for="periode">Periode kerja</label>
+            <span class="control"><input id="periode" type="text" value="21 Jul 2026 – 5 Agu 2027"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="metode">Metode pertemuan</label>
+            <span class="control"><input id="metode" type="text" value="Tatap muka + daring"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="frekuensi">Frekuensi review</label>
+            <span class="control"><input id="frekuensi" type="text" value="Bulan ke-3, ke-6, ke-12"></span>
+          </div>
+          <div class="field" style="grid-column:span 3">
+            <label class="field__label" for="batasan">Catatan batasan / pengecualian</label>
+            <span class="control"><input id="batasan" type="text" value="Perencanaan bisnis keluarga tidak termasuk. Konsultasi pajak badan dirujuk ke konsultan terpisah."></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-02 C -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian C</p>
+            <h2 class="card__title">Hak &amp; kewajiban</h2>
+          </div>
+          <span class="role role--fp-klien push">Disusun FP, disetujui klien</span>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Klien</th><th scope="col">Perencana keuangan</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>Memberikan data yang benar dan lengkap</td>
+                <td>Menjaga kerahasiaan seluruh data klien</td>
+              </tr>
+              <tr>
+                <td>Memberitahukan perubahan kondisi yang material</td>
+                <td>Menyusun analisa dan rekomendasi secara profesional</td>
+              </tr>
+              <tr>
+                <td>Hadir dalam sesi presentasi dan peninjauan</td>
+                <td>Menyerahkan laporan sesuai jadwal yang disepakati</td>
+              </tr>
+              <tr>
+                <td>Membayar biaya jasa sesuai jadwal</td>
+                <td>Mengungkapkan potensi konflik kepentingan</td>
+              </tr>
+              <tr>
+                <td>Berhak menarik diri kapan saja</td>
+                <td>Berhak menghentikan layanan bila data tidak dapat diverifikasi</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- F-02 D · BARU. Gap di kedua dokumen sumber. -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian D <span class="tag st-perbaikan">· baru, belum ada di formulir</span></p>
+            <h2 class="card__title" style="margin-top:.25rem">Biaya jasa</h2>
+          </div>
+          <span class="role role--fp-klien push">Disusun FP, disetujui klien</span>
+        </div>
+
+        <div style="padding:0 1.5rem">
+          <div class="grid grid--3" style="gap:1.25rem;margin-bottom:1.25rem">
+            <div class="field">
+              <label class="field__label" for="struktur">Struktur biaya</label>
+              <span class="control"><input id="struktur" type="text" value="Paket perencanaan menyeluruh"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="nilai">Nilai</label>
+              <span class="control"><input id="nilai" type="text" value="Rp 7.500.000"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="jadwalbayar">Cara &amp; jadwal pembayaran</label>
+              <span class="control"><input id="jadwalbayar" type="text" value="2 termin — 50% saat F-02, 50% saat serah terima"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table table--tight">
+            <thead><tr><th scope="col">Termasuk</th><th scope="col">Tidak termasuk</th></tr></thead>
+            <tbody>
+              <tr><td>Analisa keuangan menyeluruh (F-04)</td><td class="st-perbaikan">Biaya notaris untuk wasiat</td></tr>
+              <tr><td>Laporan final &amp; materi presentasi</td><td class="st-perbaikan">Premi asuransi yang direkomendasikan</td></tr>
+              <tr><td>Sesi presentasi 90 menit</td><td class="st-perbaikan">Biaya pembelian produk investasi</td></tr>
+              <tr><td>Tiga peninjauan berkala (bulan 3, 6, 12)</td><td class="st-perbaikan">Konsultasi pajak badan / konsultan pihak ketiga</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Keputusan visibilitas — lihat keputusan-modul-planner.md § Biaya jasa -->
+        <div class="notice" style="margin:1.25rem 1.5rem 1.5rem;border-radius:.5rem">
+          <div class="notice__body">
+            <p class="notice__title">Angka ini hanya terlihat oleh Anda dan klien ini</p>
+            <p class="notice__text">
+              Tidak muncul di direktori perencana mana pun dan tidak dipakai untuk perbandingan
+              tarif antar-FP. Biaya pihak ketiga di kolom kanan dibayar klien langsung ke penyedia,
+              bukan lewat AkFina.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-02 E -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian E</p>
+            <h2 class="card__title">Pernyataan &amp; batasan</h2>
+          </div>
+          <span class="role role--fp-klien push">Disusun FP, disetujui klien</span>
+        </div>
+
+        <ul class="rows">
+          <li><p class="row" style="padding:.625rem 0">Perencana keuangan bertindak independen dan <b>tidak menerima imbalan dari pihak ketiga</b> atas rekomendasi produk.</p></li>
+          <li><p class="row" style="padding:.625rem 0">Rekomendasi produk keuangan bersifat opsional. <b>Keputusan akhir sepenuhnya berada pada klien.</b></p></li>
+          <li><p class="row" style="padding:.625rem 0">Rekomendasi disusun dari data dan asumsi yang berlaku saat ini, dan <b>bukan jaminan hasil</b>.</p></li>
+          <li><p class="row" style="padding:.625rem 0">Kinerja investasi di masa lalu tidak menjamin hasil di masa depan; seluruh proyeksi bersifat asumsi.</p></li>
+        </ul>
+      </section>
+
+      <!-- F-02 F · BARU. UU PDP No. 27/2022. -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian F <span class="tag st-perbaikan">· baru, belum ada di formulir</span></p>
+            <h2 class="card__title" style="margin-top:.25rem">Persetujuan pemrosesan data pribadi</h2>
+            <p class="t-note">
+              UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi
+            </p>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+
+        <div class="grid grid--2" style="gap:1.25rem">
+          <div>
+            <p class="eyebrow">Cakupan data sensitif</p>
+            <p style="font-size:.8125rem;color:hsl(var(--fg-muted));margin-top:.35rem">
+              NIK, NPWP, slip gaji, rekening koran, polis asuransi, data anak di bawah umur
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">Dasar pemrosesan</p>
+            <p style="font-size:.8125rem;color:hsl(var(--fg-muted));margin-top:.35rem">
+              Persetujuan klien untuk keperluan penyusunan rencana keuangan
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">Jangka retensi</p>
+            <p style="font-size:.8125rem;color:hsl(var(--fg-muted));margin-top:.35rem">
+              5 tahun setelah engagement berakhir, lalu dimusnahkan
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">Hak menarik persetujuan</p>
+            <p style="font-size:.8125rem;color:hsl(var(--fg-muted));margin-top:.35rem">
+              Dapat ditarik kapan saja; layanan berhenti dan data dimusnahkan
+            </p>
+          </div>
+        </div>
+
+        <p class="check" style="margin-top:1.5rem">
+          <input id="pdp" type="checkbox" checked disabled>
+          <label for="pdp">
+            <b style="font-weight:600">Klien menyetujui pemrosesan data pribadi di atas</b>
+            <span style="display:block;font-size:var(--text-xs);color:hsl(var(--fg-muted));margin-top:.15rem">
+              Disetujui 21 Juli 2026
+            </span>
+          </label>
+        </p>
+      </section>
+
+      <!-- F-02 G -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian G</p>
+            <h2 class="card__title">Pemahaman klien</h2>
+            <p class="t-note">
+              Dipindah ke muka — dulu ada di akhir, setelah data diserahkan
+            </p>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+
+        <div class="grid" style="gap:.875rem">
+          <p class="check"><input type="checkbox" checked disabled><label>Rekomendasi bukan jaminan hasil</label></p>
+          <p class="check"><input type="checkbox" checked disabled><label>Memahami biaya jasa dan potensi konflik kepentingan</label></p>
+          <p class="check"><input type="checkbox" checked disabled><label>Memberi izin verifikasi dokumen pendukung</label></p>
+          <p class="check"><input type="checkbox" checked disabled><label>Memahami risiko investasi dan produk keuangan</label></p>
+          <p class="check"><input type="checkbox" checked disabled><label>Menerima salinan seluruh formulir yang ditandatangani</label></p>
+        </div>
+      </section>
+
+      <!-- F-02 H -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian H</p>
+            <h2 class="card__title">Jadwal kerja</h2>
+          </div>
+          <span class="role role--fp-klien push">Disusun FP, disetujui klien</span>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead><tr><th scope="col">Tahap</th><th scope="col">Formulir</th><th scope="col">Target tanggal</th><th scope="col">Status</th></tr></thead>
+            <tbody>
+              <tr><td>3 · Pengumpulan data &amp; tujuan</td><td>F-03</td><td>25 Juli 2026</td><td class="st-sehat">Selesai</td></tr>
+              <tr><td>4 · Analisa keuangan</td><td>F-04</td><td>29 Juli 2026</td><td class="st-sehat">Selesai</td></tr>
+              <tr><td>5 · Rekomendasi &amp; rencana aksi</td><td>F-05</td><td>1 Agustus 2026</td><td class="st-perbaikan">Menunggu tanda tangan klien</td></tr>
+              <tr><td>6 · Serah terima &amp; presentasi</td><td>F-06</td><td>5 Agustus 2026</td><td class="t-subtle">Belum</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="grid grid--2">
+          <div>
+            <p class="eyebrow">Klien</p>
+            <p class="strong">John Doe</p>
+            <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem;display:flex;align-items:center;gap:.35rem">
+              <i data-icon="check" data-size="13"></i> Ditandatangani di akun AkFina · 21 Jul 2026
+            </p>
+          </div>
+          <div>
+            <p class="eyebrow">Perencana keuangan</p>
+            <p class="strong">Ari Rizwan, CFP</p>
+            <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem;display:flex;align-items:center;gap:.35rem">
+              <i data-icon="check" data-size="13"></i> Ditandatangani 21 Jul 2026
+            </p>
+          </div>
+        </div>
+        <p style="margin-top:1.25rem;padding-top:1rem;border-top:1px solid hsl(var(--line));font-size:var(--text-xs);color:hsl(var(--fg-subtle))">
+          Klausul Kerahasiaan belum diwireframe — posisinya (di awal, atau di akhir bersama F-06)
+          masih perlu dikonfirmasi ke atasan.
+        </p>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

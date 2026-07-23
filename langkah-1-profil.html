@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>F-01 · Identifikasi &amp; Kelayakan — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="1">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="klien.html" aria-label="Kembali ke daftar klien"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-01 · Identifikasi &amp; Kelayakan Klien · Grup A · Tahap 1</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Belum punya akun · bagian A–E diisi klien lewat tautan 20 Jul 2026 · diperiksa Ari Rizwan, CFP</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill">92% terisi</span>
+        <button class="btn btn--secondary" type="button" data-todo="Simpan draf belum disambungkan di prototipe.">Simpan draf</button>
+        <a class="btn btn--primary" href="kesepakatan.html">Lanjut ke F-02</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+      <div class="notice">
+        <div class="notice__body">
+          <p class="notice__title">Ini tampilan FP. Klien melihat bagian A–E saja.</p>
+          <p class="notice__text">
+            Bagian F Kelayakan tidak pernah terlihat oleh klien.
+            <a class="link" href="klien-f01.html">Lihat versi yang dibuka klien</a>
+          </p>
+        </div>
+        <p class="role-legend">
+          <span class="role role--klien">Diisi klien</span>
+          <span class="role role--fp">Diisi FP</span>
+          <span class="role role--sistem">Dihitung sistem</span>
+        </p>
+      </div>
+
+      <!-- F-01 A -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian A</p>
+            <h2 class="card__title">Data diri klien utama</h2>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+
+        <div class="grid grid--3" style="gap:1.25rem">
+          <div class="field">
+            <label class="field__label" for="nama">Nama lengkap</label>
+            <span class="control"><input id="nama" type="text" value="John Doe"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="panggilan">Nama panggilan</label>
+            <span class="control"><input id="panggilan" type="text" value="John"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="nik">NIK / No. identitas</label>
+            <span class="control"><input id="nik" type="text" value="3273••••••••0012"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="npwp">NPWP <span class="field__label" style="font-weight:400">(opsional)</span></label>
+            <span class="control"><input id="npwp" type="text" value="09.254.••••.•-•23.000"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="lahirkota">Tempat lahir</label>
+            <span class="control"><input id="lahirkota" type="text" value="Bandung"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="lahirtgl">Tanggal lahir</label>
+            <span class="control"><input id="lahirtgl" type="text" value="14 Maret 1988"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="jk">Jenis kelamin</label>
+            <span class="control">
+              <select id="jk"><option>Laki-laki</option><option>Perempuan</option></select>
+              <i data-icon="chevron-down" data-size="14"></i>
+            </span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="usia">Usia saat ini <span class="role role--sistem">Dihitung sistem</span></label>
+            <span class="control" style="background:hsl(var(--foreground) / .04)"><input id="usia" type="text" value="38 tahun" readonly></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="kawin">Status pernikahan</label>
+            <span class="control">
+              <select id="kawin"><option>Menikah</option><option>Belum menikah</option><option>Cerai hidup</option><option>Cerai mati</option></select>
+              <i data-icon="chevron-down" data-size="14"></i>
+            </span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="tanggungan">Jumlah tanggungan <span class="role role--sistem">Dari bagian C</span></label>
+            <span class="control" style="background:hsl(var(--foreground) / .04)"><input id="tanggungan" type="text" value="2 orang" readonly></span>
+          </div>
+          <div class="field" style="grid-column:span 2">
+            <label class="field__label" for="alamat">Alamat domisili</label>
+            <span class="control"><input id="alamat" type="text" value="Jl. Sukajadi No. 42, Sukajadi"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="kota">Kota / provinsi</label>
+            <span class="control"><input id="kota" type="text" value="Bandung, Jawa Barat"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="hp">Telepon / WhatsApp</label>
+            <span class="control"><input id="hp" type="tel" value="0812 3344 5566"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="surel">Email</label>
+            <span class="control"><input id="surel" type="email" value="john@email.com"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="agama">Agama <span class="field__label" style="font-weight:400">(opsional — relevan untuk waris)</span></label>
+            <span class="control"><input id="agama" type="text" value="Islam"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-01 B -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian B</p>
+            <h2 class="card__title">Data pasangan <span style="font-weight:400;color:hsl(var(--fg-subtle))">(bila ada)</span></h2>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+
+        <div class="grid grid--3" style="gap:1.25rem">
+          <div class="field">
+            <label class="field__label" for="p-nama">Nama lengkap pasangan</label>
+            <span class="control"><input id="p-nama" type="text" value="Anisa Rahmawati"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="p-lahir">Tanggal lahir</label>
+            <span class="control"><input id="p-lahir" type="text" value="8 Juni 1990"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="p-kontak">Telepon / email</label>
+            <span class="control"><input id="p-kontak" type="text" value="0813 5566 7788"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="p-jabatan">Pekerjaan / jabatan</label>
+            <span class="control"><input id="p-jabatan" type="text" value="Apoteker penanggung jawab"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="p-perusahaan">Nama perusahaan / usaha</label>
+            <span class="control"><input id="p-perusahaan" type="text" value="PT Farmasi Sehat"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="p-status">Status pekerjaan</label>
+            <span class="control">
+              <select id="p-status"><option>Tetap</option><option>Kontrak</option><option>Profesional</option><option>Pengusaha</option><option>Tidak bekerja</option></select>
+              <i data-icon="chevron-down" data-size="14"></i>
+            </span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="p-sumber">Sumber penghasilan</label>
+            <span class="control"><input id="p-sumber" type="text" value="Gaji bulanan"></span>
+          </div>
+          <div class="field">
+            <!-- Menentukan siapa yang harus hadir saat presentasi F-06 -->
+            <label class="field__label" for="p-peran">Peran dalam pengambilan keputusan</label>
+            <span class="control">
+              <select id="p-peran"><option>Bersama</option><option>Utama</option><option>Tidak terlibat</option></select>
+              <i data-icon="chevron-down" data-size="14"></i>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-01 C -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian C</p>
+            <h2 class="card__title">Data anak / tanggungan</h2>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nama</th>
+                <th scope="col">Hubungan</th>
+                <th scope="col">Tanggal lahir</th>
+                <th scope="col" class="num">Usia</th>
+                <th scope="col">Jenjang pendidikan saat ini</th>
+                <th scope="col">Ketergantungan finansial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="table__name">Kayla Doe</td><td>Anak</td><td>12 Januari 2016</td>
+                <td class="num">10 th</td><td>SD kelas 4</td><td>Penuh</td>
+              </tr>
+              <tr>
+                <td class="table__name">Arkan Doe</td><td>Anak</td><td>3 September 2020</td>
+                <td class="num">5 th</td><td>TK B</td><td>Penuh</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="padding:1rem 1.5rem 1.5rem">
+          <button class="btn btn--outline" type="button" data-todo="Form tambah tanggungan belum digambar."><i data-icon="plus" data-size="15"></i> Tambah baris</button>
+        </p>
+      </section>
+
+      <!-- F-01 D -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian D</p>
+            <h2 class="card__title">Profil pekerjaan &amp; penghasilan</h2>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+
+        <p class="field__label" style="margin-bottom:.5rem">Kategori klien</p>
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.25rem">
+          <span class="pill">Karyawan</span>
+          <span class="pill pill--mute">Profesional</span>
+          <span class="pill pill--mute">Pengusaha</span>
+          <span class="pill pill--mute">Lainnya</span>
+        </div>
+
+        <div class="grid grid--3" style="gap:1.25rem">
+          <div class="field">
+            <label class="field__label" for="perusahaan">Nama perusahaan / usaha</label>
+            <span class="control"><input id="perusahaan" type="text" value="PT Nusantara Teknologi"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="jabatan">Jabatan</label>
+            <span class="control"><input id="jabatan" type="text" value="Engineering Manager"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="lama">Lama bekerja / usaha</label>
+            <span class="control"><input id="lama" type="text" value="9 tahun"></span>
+          </div>
+          <div class="field">
+            <!-- Input wajib untuk hitung dana pensiun di F-04 C -->
+            <label class="field__label" for="pensiun">Usia pensiun rencana</label>
+            <span class="control"><input id="pensiun" type="text" value="56 tahun"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="neto">Penghasilan bulanan (neto)</label>
+            <span class="control"><input id="neto" type="text" value="Rp 24.500.000"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="tahunan">Penghasilan tahunan lain</label>
+            <span class="control"><input id="tahunan" type="text" value="Rp 49.000.000 · bonus &amp; THR"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="lainsumber">Sumber penghasilan lain</label>
+            <span class="control"><input id="lainsumber" type="text" value="Sewa ruko Cimahi"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="statuskel">Status penghasilan keluarga</label>
+            <span class="control">
+              <select id="statuskel"><option>Gabungan (dua pencari nafkah)</option><option>Tunggal (satu pencari nafkah)</option></select>
+              <i data-icon="chevron-down" data-size="14"></i>
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-01 E · dari AkFina Fact Find Bagian 2, tidak ada di F-01 Aktiva -->
+      <section class="card">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian E</p>
+            <h2 class="card__title">Kondisi keluarga &amp; kehidupan</h2>
+            <p class="t-note">
+              Konteks non-keuangan. Jadi latar saat menyusun rekomendasi di F-05, bukan data
+              finansial. Tidak dihitung dalam persentase kelengkapan.
+            </p>
+          </div>
+          <span class="role role--klien push">Diisi klien</span>
+        </div>
+
+        <div class="grid" style="gap:1.25rem">
+          <div class="field">
+            <label class="field__label" for="rencana">Rencana perubahan 1–3 tahun ke depan</label>
+            <span class="control"><input id="rencana" type="text" value="Kayla masuk SMP 2028, kemungkinan pindah rumah lebih dekat sekolah"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="khawatir">Kekhawatiran keuangan terbesar</label>
+            <span class="control"><input id="khawatir" type="text" value="Biaya pendidikan dua anak berbarengan dengan cicilan KPR"></span>
+          </div>
+          <div class="field">
+            <label class="field__label" for="nilai">Nilai / prinsip penting bagi keluarga</label>
+            <span class="control"><input id="nilai" type="text" value="Menghindari riba sebisanya, pendidikan jadi prioritas utama"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- F-01 F · GERBANG. Klien tidak melihat bagian ini. -->
+      <section class="card card--internal">
+        <div class="card__head">
+          <div>
+            <p class="eyebrow">Bagian F</p>
+            <h2 class="card__title">Kelayakan sebagai klien praktek</h2>
+            <p class="t-note">
+              Gerbang sebelum lanjut ke F-02. <b>Tidak terlihat oleh klien.</b>
+            </p>
+          </div>
+          <span class="role role--fp push"><i data-icon="eye-off" data-size="12"></i> Diisi FP</span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table table--tight" style="min-width:34rem">
+            <thead><tr><th scope="col">Kriteria kelayakan</th><th scope="col">Penilaian</th><th scope="col">Keterangan</th></tr></thead>
+            <tbody>
+              <tr><td>Data keuangan riil dan dapat diverifikasi</td><td class="st-sehat">Ya</td><td>Slip gaji &amp; rekening koran diterima</td></tr>
+              <tr><td>Bersedia berbagi data lengkap</td><td class="st-sehat">Ya</td><td>Form digital diisi sendiri</td></tr>
+              <tr><td>Memiliki tujuan keuangan yang jelas</td><td class="st-sehat">Ya</td><td>Dana darurat, pendidikan, pensiun</td></tr>
+              <tr><td>Kasus cukup kompleks untuk dianalisa</td><td class="st-sehat">Ya</td><td>Dua pencari nafkah, KPR, 2 tanggungan</td></tr>
+              <tr><td>Bersedia hadir dalam sesi presentasi</td><td class="st-sehat">Ya</td><td>Bersama pasangan</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="notice" style="margin-top:1.25rem">
+          <div class="notice__body">
+            <p class="notice__title">Putusan kelayakan</p>
+            <p class="notice__text">
+              Kalau ada satu kriteria “Tidak”, pengumpulan data tidak dilanjutkan dan alasannya
+              dicatat di kolom keterangan.
+            </p>
+          </div>
+          <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:center">
+            <span class="pill">Layak — lanjut ke F-02</span>
+            <span class="pill pill--mute">Belum layak</span>
+          </div>
+        </div>
+
+        <div class="grid grid--2" style="gap:1.25rem;margin-top:1.25rem">
+          <div>
+            <p class="eyebrow">Dinilai oleh</p>
+            <p class="strong">Ari Rizwan, CFP</p>
+            <p class="t-meta">22 Juli 2026</p>
+          </div>
+          <div>
+            <p class="eyebrow">Pengganti tanda tangan basah</p>
+            <p class="st-perbaikan" style="font-size:var(--text-xs);font-weight:600;margin-top:.35rem">Belum diputuskan</p>
+            <p class="t-meta">Approval log bertimestamp vs unggah tanda tangan digital</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Jejak audit — kebutuhan aplikasi, di luar formulir -->
+      <section class="card card--internal">
+        <div class="card__head card__head--plain">
+          <div>
+            <p class="eyebrow">Jejak audit <span class="tag st-perbaikan">· di luar formulir</span></p>
+            <h2 class="card__title">Dari mana data ini masuk</h2>
+          </div>
+          <span class="role role--fp push">Diisi FP</span>
+        </div>
+
+        <dl class="cols">
+          <div>
+            <dt>Jalur masuk</dt>
+            <dd class="st-sehat">Tautan F-01 ke klien</dd>
+            <p>Dibuka 20 Jul 2026, 09.14</p>
+            <p>Klien mengisi sendiri, tanpa akun</p>
+          </div>
+          <div>
+            <dt>Diperiksa oleh</dt>
+            <dd>Ari Rizwan, CFP</dd>
+            <p>22 Jul 2026</p>
+            <p>Kelayakan dinilai setelah data masuk</p>
+          </div>
+          <div>
+            <dt>Koreksi manual</dt>
+            <dd class="st-perbaikan">1 field</dd>
+            <p>NPWP — format diperbaiki</p>
+            <p>Nilai asli tetap tersimpan di riwayat</p>
+          </div>
+        </dl>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

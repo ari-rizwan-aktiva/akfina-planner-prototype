@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Langkah 2 · Neraca (F-03 A/B/D) — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="3" data-sub="Neraca">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="klien.html" aria-label="Kembali ke daftar klien"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-03 · Data &amp; Tujuan · Bagian A, B, D</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Akun aktif sejak 21 Jul 2026 · F-03 diisi klien 25 Jul · diperiksa Ari Rizwan, CFP</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill">Langkah 2 · Neraca</span>
+        <button class="btn btn--secondary" type="button" data-todo="Simpan draf belum disambungkan di prototipe.">Simpan draf</button>
+        <a class="btn btn--primary" href="langkah-3-arus-kas.html">Lanjut ke Arus Kas</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+      <!-- F-02 A -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian A</p>
+            <h2 class="card__title">Aset — apa yang dimiliki</h2>
+          </div>
+          <p class="card__note">Properti investasi dipisah dari rumah tinggal karena hanya yang pertama masuk rasio aset investasi</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr><th scope="col">Jenis aset</th><th scope="col">Keterangan / lokasi</th><th scope="col" class="num">Nilai pasar saat ini (Rp)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Kas &amp; setara kas</td><td>Rekening payroll &amp; tabungan harian</td><td class="num"><b>35.000.000</b></td></tr>
+              <tr><td>Tabungan / deposito</td><td>Deposito 6 bulan, jatuh tempo Nov 2026</td><td class="num"><b>50.000.000</b></td></tr>
+              <tr><td>Reksa dana / saham / obligasi</td><td>RD pasar uang &amp; RD saham</td><td class="num"><b>240.000.000</b></td></tr>
+              <tr><td>Emas / logam mulia</td><td>LM 250 gram, disimpan di rumah</td><td class="num"><b>32.000.000</b></td></tr>
+              <tr><td>Properti (rumah tinggal)</td><td>Rumah Sukajadi — ditempati, agunan KPR</td><td class="num"><b>950.000.000</b></td></tr>
+              <tr><td>Properti investasi</td><td>Ruko Cimahi — disewakan</td><td class="num"><b>200.000.000</b></td></tr>
+              <tr><td>Kendaraan</td><td>1 mobil, 1 motor</td><td class="num"><b>195.000.000</b></td></tr>
+              <tr><td>Aset lain</td><td>—</td><td class="num t-subtle">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="panel__total">
+          <b>Total aset</b><b style="font-size:var(--text-base)">Rp 1.702.000.000</b>
+        </p>
+      </section>
+
+      <!-- F-02 B -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian B</p>
+            <h2 class="card__title">Kewajiban / utang — apa yang ditanggung</h2>
+          </div>
+          <p class="card__note">Kolom cicilan/bulan adalah satu-satunya sumber angka cicilan; Arus Kas mengambil dari sini</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Jenis utang</th>
+                <th scope="col" class="num">Sisa pokok (Rp)</th>
+                <th scope="col" class="num">Cicilan/bulan (Rp)</th>
+                <th scope="col" class="num">Bunga (%)</th>
+                <th scope="col">Sisa tenor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>KPR</td><td class="num"><b>620.000.000</b></td><td class="num"><b>6.850.000</b></td><td class="num">8,25</td><td>11 tahun</td></tr>
+              <tr><td>Kredit kendaraan</td><td class="num"><b>95.000.000</b></td><td class="num"><b>2.450.000</b></td><td class="num">6,50</td><td>3 tahun</td></tr>
+              <tr><td>Kartu kredit</td><td class="num"><b>18.500.000</b></td><td class="num"><b>1.850.000</b></td><td class="num st-kritis">26,00</td><td>Revolving</td></tr>
+              <tr><td>Pinjaman lain</td><td class="num t-subtle">—</td><td class="num t-subtle">—</td><td class="num t-subtle">—</td><td class="t-subtle">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="panel__total">
+          <b>Total kewajiban</b>
+          <span style="display:flex;gap:2rem"><b style="font-size:var(--text-base)">Rp 733.500.000</b><b style="font-size:var(--text-base)">Rp 11.150.000 / bln</b></span>
+        </p>
+      </section>
+
+      <!-- F-02 D -->
+      <section class="card card--flush">
+        <div class="panel__head">
+          <div>
+            <p class="eyebrow">Bagian D</p>
+            <h2 class="card__title">Proteksi yang dimiliki</h2>
+          </div>
+          <p class="card__note">Total premi Rp 17.400.000 / tahun — masuk Arus Kas sebagai Rp 1.450.000 / bulan</p>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Jenis polis</th>
+                <th scope="col">Perusahaan</th>
+                <th scope="col" class="num">Uang pertanggungan (Rp)</th>
+                <th scope="col" class="num">Premi/tahun (Rp)</th>
+                <th scope="col">Masa berlaku</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Asuransi jiwa</td><td>Prudential</td><td class="num"><b>1.000.000.000</b></td><td class="num"><b>13.000.000</b></td><td>s.d. 2044</td></tr>
+              <tr><td>Asuransi kesehatan</td><td>BPJS + Allianz</td><td class="num">Limit 250.000.000/th</td><td class="num"><b>4.400.000</b></td><td>Tahunan, diperpanjang</td></tr>
+              <tr><td>Asuransi jiwa kumpulan (group life)</td><td>Dari kantor</td><td class="num"><b>200.000.000</b></td><td class="num t-subtle">Ditanggung perusahaan</td><td class="st-perbaikan">Selama masih bekerja</td></tr>
+              <tr><td>Lainnya</td><td class="t-subtle">—</td><td class="num t-subtle">—</td><td class="num t-subtle">—</td><td class="t-subtle">—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="notice notice--warn" style="margin:1rem 1.5rem 1.5rem;border-radius:.5rem">
+          <div class="notice__body">
+            <p class="notice__title st-perbaikan">Polis jiwa belum diserahkan</p>
+            <p class="notice__text">
+              Nilai di atas dari keterangan klien. Uang pertanggungan group life hilang begitu
+              berhenti bekerja, jadi tidak dihitung sebagai proteksi permanen di F-04.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hasil hitung -->
+      <section class="card">
+        <div class="result">
+          <div class="result__main">
+            <p class="eyebrow">Dihitung otomatis</p>
+            <p style="font-size:var(--text-xs);color:hsl(var(--fg-muted));margin-top:.35rem">Kekayaan bersih</p>
+            <p class="result__value">Rp 968.500.000</p>
+            <p class="t-meta">Aset Rp 1.702.000.000 − Kewajiban Rp 733.500.000</p>
+          </div>
+          <div class="result__stats">
+            <div class="result__stat">
+              <p class="eyebrow">Rasio utang terhadap aset</p>
+              <b class="st-sehat">43,1%</b>
+              <p class="t-meta">Tolok ukur ≤ 50%</p>
+              <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600">Baik</p>
+            </div>
+            <div class="result__stat">
+              <p class="eyebrow">Rasio solvabilitas</p>
+              <b class="st-sehat">56,9%</b>
+              <p class="t-meta">Tolok ukur ≥ 35%</p>
+              <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600">Baik</p>
+            </div>
+            <div class="result__stat">
+              <p class="eyebrow">Rasio aset investasi</p>
+              <b class="st-perbaikan">30,7%</b>
+              <p class="t-meta">Tolok ukur ≥ 50%</p>
+              <p class="st-perbaikan" style="font-size:var(--text-xs);font-weight:600">Perlu perbaikan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

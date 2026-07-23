@@ -1,0 +1,104 @@
+/* Hallmark · tokens.css · studied-DNA
+ * source: https://apps.akfina.id/dashboard-analytics · extracted 2026-07-22
+ * Nilai HSL verbatim dari :root aplikasi live. Hex = konversi.
+ * Aturan sistem lengkap ada di design.md — file ini hanya token.
+ */
+
+:root {
+  /* ── Brand scale · hue 135° ─────────────────────────────────────────── */
+  --palette-50:  135 65% 83%;   /* #b7f0c6 */
+  --palette-100: 135 65% 74%;   /* #92e8a7 */
+  --palette-200: 135 65% 65%;   /* #6ce089 */
+  --palette-300: 135 65% 56%;   /* #46d86a */
+  --palette-400: 135 65% 48%;   /* #2bca53 */
+  --palette-500: 134 63% 39%;   /* #25a242 */
+  --palette-600: 135 63% 34%;   /* #208d3b */
+  --palette-700: 135 63% 28%;   /* #1a7431 */
+  --palette-800: 135 63% 22%;   /* #155b26 */
+  --palette-900: 135 62% 17%;   /* #10461e */
+
+  /* ── Semantic · light ───────────────────────────────────────────────── */
+  --background:         150 14% 98%;   /* #f9fbfa */
+  --surface:              0  0% 100%;  /* #ffffff */
+  --foreground:         135 62% 17%;   /* #10461e */
+  --primary:            135 63% 30%;   /* #1c7d34 */
+  --primary-foreground:   0  0% 100%;  /* #ffffff */
+  --secondary:          135 63% 22%;   /* #155b26 */
+
+  /* ── Aksen khusus ───────────────────────────────────────────────────── */
+  --color-ai-mint:      158 64% 52%;   /* #36d399 · penanda fitur AI */
+  --color-forest-light: 135 65% 83%;   /* #b7f0c6 · fill lembut / chart */
+
+  /* ── Varian admin · hue 168° · JANGAN dicampur dengan 135° ──────────── */
+  --color-admin-sidebar:        168 65% 15%;  /* #0d3f35 */
+  --color-admin-sidebar-active: 168 55% 23%;  /* #1a5b4e */
+  --color-admin-accent:         168 72% 40%;  /* #1daf92 */
+  --color-admin-surface:        210 20% 98%;  /* #f9fafb */
+
+  /* ── Type ───────────────────────────────────────────────────────────── */
+  --font-display: "Manrope", sans-serif;  /* variable 200–800 */
+  --font-body:    "Manrope", sans-serif;
+  --font-alt:     "Inter", sans-serif;    /* opt-in, bukan default */
+
+  --text-xs:      .75rem;   --leading-xs:      1rem;
+  --text-sm:     .875rem;   --leading-sm:   1.25rem;   /* dominan */
+  --text-base:      1rem;   --leading-base:  1.5rem;
+  --text-lg:    1.125rem;   --leading-lg:   1.75rem;
+  --text-xl:     1.25rem;   --leading-xl:   1.75rem;
+  --text-2xl:     1.5rem;   --leading-2xl:     2rem;
+  --text-3xl:   1.875rem;   --leading-3xl:  2.25rem;
+  --text-4xl:    2.25rem;   --leading-4xl:   2.5rem;
+  --text-display:   3rem;   --leading-display:     1;
+
+  --tracking-display: -.05em;
+  --tracking-eyebrow:  .22em;   /* rentang di sumber: .2em … .34em */
+
+  /* ── Spacing · skala 4pt (Tailwind default, tidak dikustom) ─────────── */
+  --space-3xs: .25rem;  --space-2xs:  .5rem;  --space-xs:  .75rem;
+  --space-sm:   1rem;   --space-md:  1.5rem;  --space-lg:     2rem;
+  --space-xl:   3rem;   --space-2xl:   4rem;  --space-3xl:    6rem;
+
+  /* ── Radius · diturunkan dari nilai literal di sumber ───────────────── */
+  --radius-pill:  9999px;
+  --radius-card:    1rem;   /* 16px */
+  --radius-panel: 1.5rem;   /* 24px */
+  --radius-hero:    2rem;   /* 32px */
+
+  /* ── Shadow · ber-tint brand, bukan hitam netral ────────────────────── */
+  --shadow-hairline: inset 0 0 0 1px rgba(44, 122, 88, .08);
+  --shadow-card:     0 8px 30px rgba(11, 61, 45, .06);
+  --shadow-raised:   0 8px 24px rgba(26, 88, 70, .12);
+
+  /* ── Motion ─────────────────────────────────────────────────────────── */
+  --ease-out: cubic-bezier(.4, 0, .2, 1);
+  --dur-fast:  150ms;   /* state transition — dominan di sumber */
+  --dur-base:  300ms;
+  --dur-slow:  700ms;   /* dekoratif saja */
+}
+
+/* Dark mode: sumber hanya meng-override 3 token. Sisanya mewarisi light. */
+.dark {
+  --background: 141 29% 6%;    /* #0b140e */
+  --surface:    141 15% 10%;   /* #161d18 */
+  --foreground: 150 14% 98%;   /* #f9fbfa */
+}
+
+/* Pemakaian: warna dibungkus hsl() karena token disimpan tanpa fungsi warna,
+ * mengikuti konvensi Tailwind/shadcn di aplikasi live.
+ *   background-color: hsl(var(--surface));
+ *   color:            hsl(var(--foreground));
+ *   border-color:     hsl(var(--primary) / .2);
+ */
+
+/* Reduced-motion — TIDAK ada di sumber. Ditambahkan di sini karena wajib.
+ * Lihat design.md § Notes butir 1. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

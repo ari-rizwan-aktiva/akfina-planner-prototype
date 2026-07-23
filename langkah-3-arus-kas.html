@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Langkah 3 · Arus Kas (F-03 C) — John Doe · AkFina</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien" data-step="3" data-sub="Arus kas">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="klien.html" aria-label="Kembali ke daftar klien"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <p class="eyebrow">F-03 · Data &amp; Tujuan · Bagian C</p>
+        <h1 class="topbar__title" style="font-size:var(--text-2xl)">John Doe</h1>
+        <p class="topbar__sub">Akun aktif sejak 21 Jul 2026 · F-03 diisi klien 25 Jul · diperiksa Ari Rizwan, CFP</p>
+      </div>
+      <div class="topbar__tools">
+        <span class="pill">Langkah 3 · Arus kas</span>
+        <button class="btn btn--secondary" type="button" data-todo="Simpan draf belum disambungkan di prototipe.">Simpan draf</button>
+        <a class="btn btn--primary" href="langkah-4-tujuan.html">Lanjut ke Tujuan</a>
+      </div>
+    </header>
+
+    <main class="content">
+      <div data-stepper></div>
+
+      <div class="grid grid--2">
+
+        <section class="card card--flush">
+          <div class="panel__head">
+            <p class="eyebrow">Pemasukan</p>
+            <h2 class="card__title">Apa yang masuk</h2>
+          </div>
+          <div class="table-wrap">
+            <table class="table table--tight">
+              <thead><tr><th scope="col">Pos</th><th scope="col" class="num">Jumlah (Rp)</th></tr></thead>
+              <tbody>
+                <tr><td>Gaji klien</td><td class="num"><b>24.500.000</b></td></tr>
+                <tr><td>Gaji pasangan</td><td class="num"><b>9.000.000</b></td></tr>
+                <tr><td>Penghasilan usaha</td><td class="num t-subtle">—</td></tr>
+                <tr>
+                  <td>Bonus / THR <span class="table__sub" style="display:inline">(dibagi 12)</span></td>
+                  <td class="num"><b>4.083.000</b></td>
+                </tr>
+                <tr><td>Hasil investasi</td><td class="num"><b>1.800.000</b></td></tr>
+                <tr><td>Penghasilan lain</td><td class="num t-subtle">—</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="panel__total">
+            <b>Total pemasukan</b><b style="font-size:var(--text-base)">Rp 39.383.000</b>
+          </p>
+        </section>
+
+        <section class="card card--flush">
+          <div class="panel__head">
+            <p class="eyebrow">Pengeluaran</p>
+            <h2 class="card__title">Apa yang keluar</h2>
+          </div>
+          <div class="table-wrap">
+            <table class="table table--tight">
+              <thead><tr><th scope="col">Pos</th><th scope="col" class="num">Jumlah (Rp)</th></tr></thead>
+              <tbody>
+                <tr><td>Kebutuhan rumah tangga</td><td class="num"><b>12.400.000</b></td></tr>
+                <tr>
+                  <!-- Ditarik dari F-02 B supaya angka cicilan cuma punya satu sumber -->
+                  <td>Cicilan utang <span class="tag st-sehat">· dari F-03 B</span></td>
+                  <td class="num"><b>11.150.000</b></td>
+                </tr>
+                <tr><td>Pendidikan anak</td><td class="num"><b>4.200.000</b></td></tr>
+                <tr>
+                  <td>Premi asuransi <span class="tag st-sehat">· dari F-03 D</span></td>
+                  <td class="num"><b>1.450.000</b></td>
+                </tr>
+                <tr><td>Transportasi</td><td class="num"><b>2.300.000</b></td></tr>
+                <tr><td>Gaya hidup &amp; rekreasi</td><td class="num"><b>3.600.000</b></td></tr>
+                <tr><td>Zakat / donasi</td><td class="num"><b>1.000.000</b></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="panel__total">
+            <b>Total pengeluaran</b><b style="font-size:var(--text-base)">Rp 36.100.000</b>
+          </p>
+        </section>
+
+      </div>
+
+      <section class="card">
+        <div class="result">
+          <div class="result__main">
+            <p class="eyebrow">Dihitung otomatis</p>
+            <p style="font-size:var(--text-xs);color:hsl(var(--fg-muted));margin-top:.35rem">Surplus arus kas / bulan</p>
+            <p class="result__value">Rp 3.283.000</p>
+            <p class="t-meta">Pemasukan Rp 39.383.000 − Pengeluaran Rp 36.100.000</p>
+          </div>
+          <div class="result__stats">
+            <div class="result__stat">
+              <p class="eyebrow">Rasio menabung</p>
+              <b class="st-perbaikan">8,3%</b>
+              <p class="t-meta">Tolok ukur ≥ 10%</p>
+              <p class="st-perbaikan" style="font-size:var(--text-xs);font-weight:600">Perlu perbaikan</p>
+            </div>
+            <div class="result__stat">
+              <p class="eyebrow">Rasio cicilan utang</p>
+              <b class="st-sehat">28,3%</b>
+              <p class="t-meta">Tolok ukur ≤ 30%</p>
+              <p class="st-sehat" style="font-size:var(--text-xs);font-weight:600">Baik</p>
+            </div>
+            <div class="result__stat">
+              <p class="eyebrow">Rasio likuiditas</p>
+              <b class="st-kritis">2,4 bulan</b>
+              <p class="t-meta">Tolok ukur ≥ 3–6 bulan</p>
+              <p class="st-kritis" style="font-size:var(--text-xs);font-weight:600">Perlu perbaikan</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>

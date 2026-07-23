@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tambah Klien Baru · AkFina Financial Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css?v=3">
+</head>
+<body data-nav="klien">
+
+<div class="app">
+  <aside data-sidebar></aside>
+
+  <div class="main">
+    <header class="topbar">
+      <a class="topbar__back" href="klien.html" aria-label="Kembali ke Input Data Klien"><i data-icon="arrow-left" data-size="17"></i></a>
+      <div class="topbar__titles">
+        <h1 class="topbar__title">Tambah Klien Baru</h1>
+        <p class="topbar__sub">Klien menginduk ke AkFina, dikelompokkan di bawah akun Anda</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <form data-go="langkah-1-profil.html" class="grid" style="gap:1.5rem">
+
+        <!-- Jalur sumber data ditanya di depan: dia menentukan sisa pekerjaannya. -->
+        <section>
+          <p class="eyebrow">Sumber data</p>
+          <h2 style="font-size:var(--text-lg);font-weight:700;margin:.25rem 0 1rem">Dari mana data klien ini masuk?</h2>
+
+          <div class="grid grid--3">
+            <a class="choice choice--on" href="klien-f01.html" aria-current="true">
+              <span class="choice__check"><i data-icon="check" data-size="14"></i></span>
+              <span class="choice__icon"><i data-icon="send" data-size="18"></i></span>
+              <span class="choice__title">Kirim tautan ke klien</span>
+              <span class="choice__text">Klien mengisi F-01 sendiri lewat tautan, tanpa perlu punya akun. Data masuk utuh tanpa diketik ulang.</span>
+              <span class="choice__tag tag st-sehat">Tercepat · tanpa ketik ulang</span>
+            </a>
+
+            <a class="choice" href="scan-ocr.html">
+              <span class="choice__icon"><i data-icon="scan-line" data-size="18"></i></span>
+              <span class="choice__title">Scan form kertas (OCR)</span>
+              <span class="choice__text">Unggah hasil pindai F-03. Sistem membaca isinya, Anda tinggal mengoreksi yang meragukan.</span>
+              <span class="choice__tag tag st-perbaikan">Perlu koreksi manual</span>
+            </a>
+
+            <a class="choice" href="langkah-1-profil.html">
+              <span class="choice__icon"><i data-icon="keyboard" data-size="18"></i></span>
+              <span class="choice__title">Isi manual</span>
+              <span class="choice__text">Ketik dari hasil wawancara. Dipakai kalau klien belum punya akun dan tidak mengisi form.</span>
+              <span class="choice__tag tag t-subtle">Paling lambat</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="card__head">
+            <div>
+              <p class="eyebrow">Data minimal</p>
+              <h2 class="card__title">Identitas klien</h2>
+              <p class="t-note">
+                Sisanya diisi di Langkah 1–4. Klien sudah bisa ditambahkan hanya dengan nama.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid--2" style="gap:1.25rem">
+            <div class="field">
+              <label class="field__label" for="nama">Nama lengkap *</label>
+              <span class="control"><input id="nama" name="nama" type="text" value="John Doe" required></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="hp">Nomor HP</label>
+              <span class="control"><input id="hp" name="hp" type="tel" value="0812 3344 5566"></span>
+            </div>
+            <div class="field">
+              <label class="field__label" for="surel">Email (opsional)</label>
+              <span class="control"><input id="surel" name="surel" type="email" value="john@email.com"></span>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- Akun sengaja BELUM dibuat di sini: kelayakan F-01 belum dinilai,
+             jadi belum tentu orang ini jadi klien. Lihat HANDOFF.md § alur. -->
+        <div class="notice">
+          <div class="notice__body">
+            <p class="notice__title">Belum ada akun yang dibuat sekarang</p>
+            <p class="notice__text">
+              Klien mengisi F-01 lewat tautan tanpa akun. Akun AkFina baru ditawarkan setelah
+              Anda menilai kelayakan di F-01 bagian F, sekalian sebagai undangan menandatangani
+              F-02. Record-nya sendiri sudah menginduk ke AkFina dan dikelompokkan di bawah akun Anda.
+            </p>
+          </div>
+        </div>
+
+        <p style="display:flex;gap:.75rem;justify-content:flex-end;flex-wrap:wrap">
+          <a class="btn btn--secondary" href="klien.html">Batal</a>
+          <button class="btn btn--primary" type="submit">Tambah &amp; Mulai Langkah 1</button>
+        </p>
+
+      </form>
+    </main>
+  </div>
+</div>
+
+<script src="assets/app.js?v=3"></script>
+<script type="module" src="assets/agentation.js"></script>
+</body>
+</html>
